@@ -1,0 +1,53 @@
+
+/* Variables */
+
+$celesteverdozo: #07838d;
+$celesteclaro:#85eaf1;
+$blancoamarillo:#f8f5e5;
+$naranjaosc:rgba(255, 72, 0, 0.9);
+$naranjamed: #ff5e01;
+$naranjacla:#ffa228;
+$azulosc:#062c45;
+
+@mixin text ($font-family, $font-weight, $font-style, $font-size, $text-align, $color){
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-size: $font-size;
+    text-align: $text-align;
+    color: $color;
+}
+               
+@mixin dFlex ($display,$flex-direction, $flex-wrap, $justify-content, $align-items){
+    display: $display ;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    justify-content:$justify-content;
+    align-items: $align-items;
+}
+       
+@import "index";
+@import "productos";
+@import "encontranos";
+@import "sobre nosotros";
+@import "pedido";
+@import "mediaquery";     
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+               
+
+
+
+
+
+
+
+
+
+

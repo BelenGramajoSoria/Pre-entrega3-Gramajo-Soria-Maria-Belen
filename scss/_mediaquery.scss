@@ -1,0 +1,1225 @@
+/* Media query 768px */
+
+@media screen and (max-width:768px) {
+    /* media query página 'Sobre nosotros' */
+/* Contenedor principal */
+body{
+    .mainIndex{
+        .sobreNosotros {
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 0.4fr 1fr 0.2fr;
+            grid-template-areas: "tituloSN" "texto1" "texto2" "franjaV";
+            height: auto;
+
+            /* Título 'Sobre nosotros' */
+            .tituloSN { 
+                grid-area: tituloSN; 
+                width: 100vw;
+                h2 {
+                    font-size: 45px;
+                }
+            }
+            /* Franja vertical */
+            .franjaV { 
+                width: 100vw;
+                flex-direction: row;
+                margin-right: 0px;
+                justify-content: space-evenly;
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            /* Texto introductorio */
+            .texto1 { 
+                grid-area: texto1;
+                margin: 60px;
+                max-width: 100vw;
+                p{
+                    font-size: 18px;
+                }
+            }
+            .texto2{
+                grid-area: texto2;
+                text-align: center;
+                margin: 0px;
+                width: 100vw;
+
+                .valoresTitulo {
+                    font-size: 20px;
+                }
+                .textoLimitado {
+                    font-size: 20px;
+                    .str{
+                       font-size: 22px;
+                    }
+                }
+            }
+        }      
+    }
+}
+/* Fin media query de la página 'Sobre nosotros' */
+
+
+    /* encontranos Media query 768px */
+    .bodyEncontranos {
+        .mainIndex {
+            .encontranos {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 200px auto auto auto;
+                gap: 10px;
+                grid-template-areas:
+                    "tituloEncontrarnos tituloEncontrarnos "
+                    "mapa mapa"
+                    "verticalFranja verticalFranja"
+                    "trabaja horarios ";
+                height: auto;
+                padding-bottom: 5px;
+                /*Título Encontranos*/
+                .tituloEncontrarnos {
+                    @include dFlex (flex, column, nowrap, center, center);
+                    width: 100vw;
+                    h2 {
+                        @include text ("Belanosima" sans-serif , 500, normal, 40px, center, $azulosc );
+                        font-family: "Belanosima", sans-serif;
+                    }
+                }
+                /* Franja vertical */
+                .verticalFranja {
+                    grid-area: verticalFranja;
+                    background-color: $azulosc;
+                    @include dFlex (flex, row, nowrap, center, center);
+                    p {
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 20px, center, $celesteclaro );
+                    }
+                    .redesSociales2{
+                        li {
+                            @include dFlex (flex, row, nowrap, baseline, center);
+                            margin-left: 0px;
+                            padding-top: 0px;
+                        }
+                        a {
+                            .imgRedes2 {
+                                width: 60px;
+                                height: 60px;
+                                margin: 0px;
+                            }
+                        }  
+                    }
+                }
+                /* Mapa */
+                .mapa {
+                    grid-area: mapa;
+                    padding-left: 50px;
+                    margin-right: 50px;
+                    @include dFlex (flex, row, nowrap, center, center);
+                }
+                /* Horarios */
+                .horarios {
+                    grid-area: horarios;
+                    background-color: $celesteverdozo;
+                    @include dFlex (flex, column, nowrap, center, center);
+                    margin-right: 50px;
+                    h2 {
+                        @include text ("Belanosima" sans-serif , 500, normal, 30px, center, $azulosc );
+                        font-family: "Belanosima", sans-serif;
+                    }
+                    p {
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $celesteclaro );
+                    }
+                }
+                /* Trabaja con nosotros */
+                .trabaja {
+                    grid-area: trabaja;
+                    background-color: $celesteclaro;
+                    @include dFlex (flex, column, nowrap, center, center);
+                    margin-left: 50px;
+                    h2 {
+                        margin-top: 10px;
+                        @include text ("Belanosima" sans-serif , 300, normal, 30px, center, $azulosc );
+                        font-family: "Belanosima", sans-serif;
+                    } 
+                    input, form {
+                       align-self: center;
+                       @include text ("Belanosima" sans-serif , 400, normal, 15px, center, $azulosc );
+                        font-family: "Belanosima", sans-serif;
+                    }
+                }
+            }
+        } 
+    }
+ /*fin media query encontranos 768px*/
+ /* media query productos 768px*/
+ main{
+    .tituloProductosBox{
+        .tituloProductos{  
+            .pedidoBox {
+                .guiaDePedidos2{ 
+                    ul{
+                        .logosPedidos {
+                            width: 130px;
+                            height: 130px;
+                            margin-left: 0px;
+                        }
+                        .logosPedidos2 {
+                            width: 20px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+            .tituloProd { 
+                h2 { 
+                    @include text ("Belanosima" sans-serif , 400, normal, 45px, center, $azulosc);
+                    font-family: "Belanosima", sans-serif;
+                }
+                .inicioSusc{
+                    padding-right: 50px;
+                    padding-left: 50px;
+                }
+                .vacio { 
+                    grid-area: vacio; 
+                }
+            }
+        }
+    }
+    /*seccion guia de pedidos*/
+
+    /*seccion grupo de productos*/
+    .tiposDeProductosBox{
+        @include dFlex (flex, column, wrap, center, center);
+        margin: 40px;
+
+        h2{
+            @include text ("Belanosima" sans-serif , 400, normal, 45px, center, $azulosc );
+            font-family: "Belanosima", sans-serif;
+            padding-top: 25px;
+        }
+        .listaImagenes{
+            list-style: none;
+            @include dFlex (flex, row, wrap, center, center);
+            li{
+                text-align: center;
+                text-decoration: none;
+                p{
+                    @include text ("Belanosima" sans-serif , 400, normal, 30px, center, $azulosc );
+                    font-family: "Belanosima", sans-serif;
+                    margin: 20px;
+                    
+                }
+                .produc{
+                    width: 220px;
+                    height: 220px;
+                    margin: 25px;
+                    &:hover{
+                       transform: scale(1.2);
+                    }
+                }
+            } 
+        }         
+    }
+}
+/*fin media query productos 768px*/
+/*media query index 768px*/
+/*body box*/
+body { 
+    header{
+        .barraSuperior{
+            height: 100px;
+            .logo1 {
+                width: 130px;
+                height: 130px;
+            }
+        }
+        .barra2{
+            .navbar {
+                height: 55px;
+                background-color: $naranjacla;
+                .container-fluid{
+                    .navbar-toggler{
+                        color:$naranjamed;
+                    }   
+                    .collapse{
+                        .logoSerch {
+                          margin-right: 30px;
+                        }
+                    }
+                    .nav-item{
+                        .nav-link{
+                            color:$azulosc;
+                            margin: 1px;
+                            .dropdown-menu{
+                                background-color: transparent;
+                                border: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    .mainIndex{
+        /*seccion bienvenidos*/
+        .videobv {
+            max-height: 880px;
+            margin-bottom: -15px;
+            .video {
+                width: 100vw;
+                height: 1020px;
+            }
+            .welcome-text {
+                h1 {
+                    @include text ("Belanosima" "sans-serif" , 500, normal, 110px, center, $azulosc );
+                    font-family: "Belanosima", sans-serif;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+                    animation-name: tituloAnimado; 
+                    animation-iteration-count: infinite;
+                    animation-duration: 3s;
+                }
+                @keyframes tituloAnimado{
+                    0%{
+                        font-size: 80px;
+                        color: $azulosc;
+                    }
+                    25%{
+                        font-size: 90px;
+                        color: $celesteverdozo;
+                    }
+                    50%{
+                        font-size: 100px;
+                        color: $celesteclaro;
+                    }
+                    75%{
+                        font-size: 90px;
+                        color: $naranjamed;
+                    }
+                    100%{
+                        font-size: 80px;
+                        color: $naranjacla;
+                    }
+                }
+                p {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    @include text ("Belanosima" "sans-serif" , 500, normal, 110px, center, $azulosc );
+                    font-family: "Belanosima", sans-serif;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                    animation-name: tituloAnimado2; 
+                    animation-iteration-count: infinite;
+                    animation-duration: 3s;
+                }
+                @keyframes tituloAnimado2{
+                    0%{
+                        font-size: 40px;
+                        color: $azulosc;
+                    }
+                    25%{
+                        font-size: 50px;
+                        color: $celesteverdozo;
+                    }
+                    50%{
+                        font-size: 60px;
+                        color: $celesteclaro;
+                    }
+                    75%{
+                        font-size: 50px;
+                        color: $naranjamed;
+                    }
+                    100%{
+                        font-size:40px;
+                        color: $naranjacla;
+                    }
+                }
+            }
+            /*botones iniciosuscripcion*/
+           .inicioSuscripcion {
+               top: 75%;
+               left: 50vw;
+               transform: translate(-50%, -50%);
+               margin-left: 0rem;
+               @include dFlex (flex, column, nowrap, center, center);
+
+              .boton{
+                   margin: 10px;
+                   margin-bottom: 0px;
+                   @include text ("Belanosima" sans-serif , 400, normal, 30px, center, $blancoamarillo );
+                   font-family: "Belanosima", sans-serif;
+                }
+            }
+        }
+        /*seccion pedidos*/
+        .pedidosBoxs {
+            @include dFlex (flex, column, nowrap, center, space-evenly);
+            height: 300px;
+            width: auto;
+            margin-left: 0px;
+            padding: 0;
+            margin-right: 0px;
+            border-radius: 0px;
+            background-color: $naranjamed;
+            margin-bottom: -15px;
+
+            .aLaIzquierda {
+                @include dFlex (flex, row, nowrap, center, center);
+                margin-bottom: 20px;
+                .logoNaranja {
+                    width: 100px;
+                    height: 100px;
+                }
+                .palabras {
+                    @include dFlex (flex, column, nowrap, center, center);
+                    p {
+                        @include text ("Belanosima" sans-serif , 400, normal, 40px, center, $naranjacla );
+                        font-family: "Belanosima", sans-serif;
+                        margin: -7px;
+                    }       
+                }
+            }
+            .guiaDePedidos{
+                ul{
+                    list-style-type: none;
+                    @include dFlex (flex, row, wrap, space-between, center);
+                    margin-left: 30px;
+
+                    .logosPedidos {
+                        width: 110px;
+                        height: 110px;
+                        margin-left: 7px;
+                    }
+                    .logosPedidos2 {
+                        width: 20px;
+                        height: 30px;
+                        #f2 {
+                            display: none;
+                        }
+                    }
+                }   
+            }
+        } 
+        .separadorDePagina{
+            height: 8rem;
+        }
+        
+        /*seccion ofertas*/
+       .ofertasBox {
+           height: auto;
+           margin-bottom: -15px;
+           h2 {
+               font-size: 55px;
+               padding: 10px;
+           }
+           p {
+               padding: 4px;
+               @include text ("Belanosima" sans-serif , 250, normal, 28px, center, $celesteclaro );
+               font-family: "Edu VIC WA NT Beginner", sans-serif;
+               width: 100%;
+            }
+            .ofertasDiv {
+                @include dFlex (flex, column, nowrap, center, center);
+                margin-top: 10px;
+                .ofertasImg {
+                    width: 230px;
+                    height: 230px;
+                }
+            }
+        }
+
+      /* Sección recetas */
+       .recetasBox {
+            padding-bottom: 10px;
+                margin-bottom: -15px;
+           h2 {
+                @include text ("Belanosima" sans-serif , 250, normal, 55px, center, $blancoamarillo);
+                font-family: "Belanosima", sans-serif;
+                padding: 15px;
+            }
+            p {
+                @include text ("Edu VIC WA NT Beginner", 500, normal, 28px, center, $azulosc );
+            }
+           .iframe {
+                @include dFlex (flex, column, nowrap, space-evenly, center);
+                margin-top: 50px;
+                .ratio{
+                   justify-content: space-evenly;
+                   &:hover {
+                       margin: 5px;
+                       transform: scale(1.2);
+                       transition: transform 0.1s;
+                       z-index: 1;
+                    }
+                }   
+            }
+        }
+        /* Cards */
+        .tarjetaVisita {
+            @include dFlex (flex, column, nowrap, space-evenly, center);
+            .card{
+                margin-bottom: 40px;
+            }
+            h4{
+                @include text ("Belanosima" sans-serif , 300, normal, 40px, center, $azulosc );
+                font-family: "Belanosima", sans-serif;
+            }
+            p{
+                @include text ("Edu VIC WA NT Beginner", 500, normal, 25px, center, $azulosc );
+                margin-bottom: 20px;
+            }
+        }
+    }
+    /* Footer */
+    footer {
+        height: auto;
+        padding: 15px;
+        .flecha {
+            width: 70px;
+            height: 70px;         
+        }
+        .logoFooter {
+            display: none;
+        }
+        .redesSociales {
+            .imgRedes {
+                margin: 7px;
+
+            }
+        }    
+    }
+}
+    /*fin Media query index*/
+
+    /* Media query pedidos 768 */
+    body{
+        .mainIndex{
+            .pedidos {
+                grid-template-columns:1fr; 
+                grid-template-rows: 200px 700px 440px 400px; 
+                grid-template-areas: 
+                  "tituloPedidos"
+                  "formularioPedidos"
+                  "iniciaSesion" 
+                  "suscribite"; 
+                  height: auto;
+
+                /* Formulario 'Pedidos' */
+                .formularioPedidos {
+                    @include dFlex (flex, column, nowrap, center, center);
+                    .formIzquierda{
+                        @include dFlex (flex, column, nowrap, space-around, center);
+                        margin: 0px;
+                    }
+                    .formDerecha{
+                        margin: 0px;
+                    }
+                }
+                /* Sección 'Inicia sesión' */
+                .iniciaSesion{
+                    margin-top: 0px;
+                    margin-bottom: 40px;
+                    margin-right: 40px;
+                    .iSFormulario{
+                        form{
+                            @include text (Edu VIC WA NT Beginner, 500, normal, 24px, center, $azulosc );
+                        }
+                    }
+                }
+                /* Sección 'Suscribite' */
+                .suscribite{
+                    margin-top:0px;
+                    margin-left: 40px;
+                    margin-bottom: 0px;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                }    
+            }
+        }
+    }
+}
+/*Fin Media query pedidos 768 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Media query 420 */
+@media screen and (max-width: 420px) {
+    /* Productos Media query 420px */
+    main{
+        .tituloProductosBox{
+            .tituloProductos{  
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr auto auto auto;
+                grid-auto-flow: row;
+                grid-template-areas:
+                "tituloProd"
+                "inicioSusc"
+                "pedidoBox"
+                "pedidoBox";
+                height: auto;
+
+                .pedidoBox {
+                    grid-area: pedidoBox;
+                    .guiaDePedidos2{ 
+                        ul{
+                            list-style-type: none;
+                            @include dFlex (flex, row, wrap, center, baseline);
+                            .logosPedidos {
+                                width: 110px;
+                                height: 110px;
+                                margin: 10px;
+                            }
+                            .logosPedidos2 {
+                                width: 10px;
+                                height: 20px;
+                            }
+                        
+                        }
+                    }
+                }
+                .tituloProd { 
+                    grid-area: tituloProd; 
+                    @include dFlex (flex, column, nowrap, center, center);
+                    h2 { 
+                        @include text ("Belanosima" sans-serif , 400, normal, 40px, center, $azulosc);
+                        font-family: "Belanosima", sans-serif;
+                    }
+                    .inicioSusc{
+                        grid-area: inicioSusc; 
+                        @include dFlex (flex, column, nowrap, center, center);
+                        padding-right: 0px;
+                        padding-left: 0px;
+                        a{
+                            text-decoration: none;
+                            background-color: $azulosc;
+                            border-radius: 10px;
+                            @include text ("Belanosima" sans-serif , 400, normal, 20px, center, $blancoamarillo );
+                            font-family: "Belanosima", sans-serif;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                            &:hover {
+                                background-color: $naranjamed;
+                            }
+                        }
+                    }
+                    .vacio { 
+                        grid-area: vacio; 
+                    }
+                }
+    
+            }
+        }
+        /*seccion guia de pedidos*/
+    
+        /*seccion grupo de productos*/
+        .tiposDeProductosBox{
+            margin: 15px;
+            h2{
+                @include text ("Belanosima" sans-serif , 400, normal, 40px, center, $azulosc );
+                font-family: "Belanosima", sans-serif;
+                padding-top: 25px;
+            }
+            .listaImagenes{
+                list-style: none;
+                padding-left: 0px;
+                li{
+                    text-align: center;
+                    p{
+                        @include text ("Belanosima" sans-serif , 400, normal, 20px, center, $azulosc );
+                        font-family: "Belanosima", sans-serif;
+                       margin: 12px;
+                    }
+                    .produc{
+                        width: 250px;
+                        height: 250px;
+                        margin: 20px;
+                    }
+                } 
+            }         
+        }
+
+        .listadoDeProductos {
+            h2{
+                @include text ("Belanosima" sans-serif , 400, normal, 40px, center, $celesteclaro );
+                font-family: "Belanosima", sans-serif;
+                margin: 20px;
+            }
+            h3{
+                @include text ("Belanosima" sans-serif , 400, normal, 20px, center, $azulosc );
+                font-family: "Belanosima", sans-serif;
+                padding-top: 20px
+                
+            } 
+            /* Categorías */
+           .galletas, .lacteos, .bebidas, .almacen, .frutas, .limpieza {
+                @include dFlex (flex, column, nowrap, center, center);
+                height: auto;
+        
+                .imagenProducto {
+                    margin-top: 20px;
+                    width: 250px;
+                    height: 250px;
+                    padding-bottom:20px;
+                } 
+            }
+       
+        }
+        .irAPedidos{
+            @include dFlex (flex, column, nowrap, center, center);
+            margin: 70px;
+    
+            p {
+                @include text ("Edu VIC WA NT Beginner", 500, normal, 30px, center, $azulosc );
+                margin-bottom: 20px;
+            }
+        }
+    }
+     /* Fin productos Media query 420px */
+    /* encontranos Media query 420px */
+    .bodyEncontranos {
+        .mainIndex {
+            .encontranos {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 200px auto auto auto auto;
+                grid-template-areas:
+                    "tituloEncontrarnos  "
+                    "mapa"
+                    "verticalFranja"
+                    "trabaja"
+                    "horarios";
+                height: auto;
+                /*Título Encontranos*/
+                .tituloEncontrarnos {
+                    @include dFlex (flex, column, nowrap, center, center);
+                    width: 100vw;
+                    h2 {
+                        @include text ("Belanosima" sans-serif , 500, normal, 40px, center, $azulosc );
+                        font-family: "Belanosima", sans-serif;
+                    }
+                }
+                /* Franja vertical */
+                .verticalFranja {
+                    @include dFlex (flex, column, nowrap, center, center);
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    width: 100vw;
+                
+                    p {
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 20px, center, $celesteclaro );
+                    }
+                    .redesSociales2{
+                        li {
+                            @include dFlex (flex, row, nowrap, baseline, center);
+                            margin-left: 0px;
+                            padding-top: 0px;
+                        }
+                        a {
+                            .imgRedes2 {
+                                width: 60px;
+                                height: 60px;
+                                margin: 0px;
+                            }
+                        }  
+                    }
+                }
+                /* Mapa */
+                .mapa {
+                    grid-area: mapa;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    padding-left: 0;
+                    padding-right: 0;
+                    @include dFlex (flex, row, nowrap, center, center);
+                    max-width: 100vw;
+                }
+                /* Horarios */
+                .horarios {
+                    grid-area: horarios;
+                    background-color: $celesteverdozo;
+                    @include dFlex (flex, column, nowrap, center, center);
+                    width: 100vw;
+                    margin-right: 0px;
+                    h2 {
+                        @include text ("Belanosima" sans-serif , 500, normal, 30px, center, $azulosc );
+                        font-family: "Belanosima", sans-serif;
+                    }
+                    p {
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $celesteclaro );
+                    }
+                }
+                /* Trabaja con nosotros */
+                .trabaja {
+                    grid-area: trabaja;
+                    background-color: $celesteclaro;
+                    @include dFlex (flex, column, nowrap, center, center);
+                    margin-left: 0px;
+                    width: 100vw;
+                    h2 {
+                        margin-top: 10px;
+                        @include text ("Belanosima" sans-serif , 300, normal, 30px, center, $azulosc );
+                        font-family: "Belanosima", sans-serif;
+                    } 
+                    input, form {
+                       align-self: center;
+                       @include text ("Belanosima" sans-serif , 400, normal, 15px, center, $azulosc );
+                        font-family: "Belanosima", sans-serif;
+                    }
+                }
+            }
+        } 
+    }
+   /* fin Media query encontranos 420 */
+   /*Media query sobre nosotros 420 */
+   body{
+    .mainIndex{
+        .sobreNosotros {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px auto auto auto;
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "tituloSN"
+              "texto1"
+              "texto2"
+              "franjaV";
+            width: 100%;
+            height: auto;
+      
+
+            /* Título 'Sobre nosotros' */
+            .tituloSN { 
+                grid-area: tituloSN; 
+                width: 100vw;
+                h2 {
+                    font-size: 30px;
+                }
+            }
+            /* Franja vertical */
+            .franjaV { 
+                display: flex;
+                flex-direction: column;
+                margin-right: 0px;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+                width: 100vw;
+
+                img{
+                    width: 170px;
+                    height: 170px;
+                }
+            }
+            /* Texto introductorio */
+            .texto1 { 
+                grid-area: texto1;
+                margin: 30px;
+                max-width: 100vw;
+                p{
+                    font-size: 18px;
+                }
+            }
+            .texto2{
+                grid-area: texto2;
+                text-align: center;
+                margin: 0px;
+                max-width: 100vw;
+                .valoresTitulo {
+                    font-size: 20px;
+                    
+                }
+                .textoLimitado {
+                    padding-left: 0px;
+                    font-size: 20px;
+                    margin: 20px;
+                    .str{
+                       font-size: 18px;
+                    }
+                }
+            }
+        }      
+    }
+}
+/* fin Media query sobre nosotros 420 */
+    /* Media query index 420 */
+      body {
+        header{
+            #navbarSupportedContent{
+                background-color: rgba(255, 255, 255, 0.4);
+                text-decoration-color: #062c45;
+                border-radius: 20px;
+            }
+
+        }
+        .mainIndex{
+            /*seccion bienvenidos*/
+            .videobv {
+                max-height: 700px;
+                margin-bottom: -15px;
+    
+                .video {
+                    width: 100vw;
+                    object-fit: scale-down;
+                }
+                .welcome-text {
+                    h1 {
+                        @include text ("Belanosima" "sans-serif" , 500, normal, 50px, center, $azulosc );
+                        font-family: "Belanosima", sans-serif;
+                    }
+                    @keyframes tituloAnimado{
+                        0%{
+                            font-size: 30px;
+                            color: $azulosc;
+                        }
+                        25%{
+                            font-size: 40px;
+                            color: $celesteverdozo;
+                        }
+                        50%{
+                            font-size: 50px;
+                            color: $celesteclaro;
+                        }
+                        75%{
+                            font-size: 40px;
+                            color: $naranjamed;
+                        }
+                        100%{
+                            font-size: 30px;
+                            color: $naranjacla;
+                        }
+                    }
+                    p {
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        @include text ("Belanosima" "sans-serif" , 500, normal, 30px, center, $azulosc );
+                        font-family: "Belanosima", sans-serif;
+                    }
+                    @keyframes tituloAnimado2{
+                        0%{
+                            font-size: 18px;
+                            color: $azulosc;
+                        }
+                        25%{
+                            font-size: 25px;
+                            color: $celesteverdozo;
+                        }
+                        50%{
+                            font-size: 30px;
+                            color: $celesteclaro;
+                        }
+                        75%{
+                            font-size: 25px;
+                            color: $naranjamed;
+                        }
+                        100%{
+                            font-size: 18px;
+                            color: $naranjacla;
+                        }
+                    }
+                }
+                /*botones iniciosuscripcion*/
+               .inicioSuscripcion {
+                   top: 75%;
+                   left: 50vw;
+                   z-index: 100;
+                   transform: translate(-50%, -50%);
+                   margin-left: 0rem;
+                   @include dFlex (flex, column, nowrap, center, center);
+    
+                  .boton{
+                       margin-bottom: 0px;
+                       margin: 10px;
+                    }
+                }
+            }
+            /*seccion pedidos*/
+            .pedidosBoxs {
+                @include dFlex (flex, column, nowrap, center, center);
+                height: auto;
+                padding-top: 20px;
+                margin-bottom: -15px;
+    
+                .aLaIzquierda {
+                    @include dFlex (flex, row, nowrap, center, center);
+                    .logoNaranja {
+                        width: 90px;
+                        height: 90px;
+                    }
+                    .palabras {
+                        @include dFlex (flex, column, nowrap, center, center);
+                        margin-left: 40px;
+                        p {
+                            @include text ("Belanosima" sans-serif , 400, normal, 30px, center, $naranjacla );
+                            font-family: "Belanosima", sans-serif;
+                            margin: -7px;
+                        }       
+                    }
+                }
+                .guiaDePedidos{
+                    ul{
+                        list-style-type: none;
+                        @include dFlex (flex, row, wrap, space-between, center);
+                        margin-left: 30px;
+    
+                        .logosPedidos {
+                            width: 100px;
+                            height: 100px;
+                            margin-left: 7px;
+                            #i4 {
+                                margin-right: 55px;
+                            }
+                        }
+                        .logosPedidos2 {
+                            width: 10px;
+                            height: 20px;
+                            #f2 {
+                                display: none;
+                            }
+                        }
+                    }   
+                }
+            } 
+            .separadorDePagina{
+                height: 8rem;
+            }
+            /*seccion ofertas*/
+           .ofertasBox {
+               height: auto;
+               margin-bottom: -15px;
+               h2 {
+                   font-size: 45px;
+                   padding: 10px;
+               }
+               p {
+                   padding: 4px;
+                   @include text ("Belanosima" sans-serif , 250, normal, 28px, center, $celesteclaro );
+                   font-family: "Edu VIC WA NT Beginner", sans-serif;
+                }
+                .ofertasDiv {
+                    @include dFlex (flex,column, nowrap, center, center);
+                    margin-top: 10px;
+                    .ofertasImg {
+                        width: 190px;
+                        height: 190px;
+                        margin: 8px;
+                    }
+                }
+            }
+          /* Sección recetas */
+           .recetasBox {
+                padding-bottom: 10px;
+               h2 {
+                    @include text ("Belanosima" sans-serif , 250, normal, 45px, center, $blancoamarillo);
+                    font-family: "Belanosima", sans-serif;
+                    background-color:#07838d;
+                    padding-top: 15px;
+                }
+                p {
+                    @include text ("Edu VIC WA NT Beginner", 500, normal, 25px, center, $azulosc );
+                    margin-bottom: 10px;
+                }
+               .iframe {
+                    @include dFlex (flex, column, nowrap, space-evenly, center);
+                    margin-top: 50px;
+                    margin-bottom: -15px;
+                    .ratio{
+                       justify-content: space-evenly;
+                       &:hover {
+                           margin: 5px;
+                           transform: scale(1.2);
+                           transition: transform 0.1s;
+                           z-index: 1;
+                        }
+                    }   
+                }
+            }
+            /* Cards */
+            .tarjetaVisita {
+                @include dFlex (flex, column, nowrap, space-evenly, center);
+                padding: 80px;
+                background-color: $celesteverdozo;
+                .card{
+                    background-color: $blancoamarillo;
+                    width: 25rem;
+                    .btn-custom {
+                        background-color:$naranjamed;
+                        @include text ("Edu VIC WA NT Beginner", 300, normal, 20px, center, $blancoamarillo );
+                        &:hover {
+                            transform: scale(1.2);
+                            transition: transform 0.3s;
+                            
+                        }
+                    }
+                    
+                }
+                h4{
+                    @include text ("Belanosima" sans-serif , 300, normal, 40px, center, $azulosc );
+                    font-family: "Belanosima", sans-serif;
+                }
+                p{
+                    @include text ("Edu VIC WA NT Beginner", 500, normal, 25px, center, $azulosc );
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        /* Footer */
+        footer {
+            width: 100%;
+            height: 150px;
+            background-color: $azulosc;
+            padding: 20px;
+            @include dFlex (flex, row, nowrap, space-between, center);
+            .flecha {
+                width: 100px;
+                height: 100px;
+                &:hover {
+                    transform: scale(1.2);
+                    transition: transform 0.3s;
+                }            
+            }
+            .logoFooter {
+                width: 120px;
+                height: 120px;
+                margin-left: 130px;
+                &:hover {
+                    transform: scale(1.2);
+                    transition: transform 0.3s;
+                } 
+            }
+            .redesSociales {
+                @include dFlex (flex, column, nowrap, center, center);
+                p {
+                    @include text ("Edu VIC WA NT Beginner", 500, normal, 14px, center, $celesteclaro );
+                }
+                .imgRedes {
+                    width: 50px;
+                    height: 50px;
+                    margin: 10px;
+                    transition: transform 0.3s;
+                    &:hover {
+                        transform: scale(1.2);
+                    } 
+                }
+            }    
+        }
+    }
+    /*fin media query index 420px*/
+      
+  /* Media query pedidos 420 */
+body{
+    .mainIndex{
+        .pedidos {
+            grid-template-rows: 200px auto auto auto; 
+            grid-template-areas: 
+              "tituloPedidos "
+              "formularioPedidos"
+              "iniciaSesion"
+              "suscribite"; 
+            height: auto;
+            width: 100vw;
+            padding-bottom: 20px;
+            .tituloPedidos {
+                h2 {
+                    @include text ("Belanosima" sans-serif , 500, normal, 40px, center, $azulosc );
+                }
+            }
+            /* Formulario 'Pedidos' */
+            .formularioPedidos {
+                grid-area: formularioPedidos;
+                background-color: $naranjacla;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                @include dFlex (flex, column, nowrap, space-around, center);
+                @include text ("Edu VIC WA NT Beginner", 500, normal, 16px, center, $azulosc );
+                margin: 15px;
+                .formIzquierda{
+                    @include dFlex (flex, column, nowrap, space-around, center);
+                    margin: 10px;
+                }
+                .formDerecha{
+                    @include dFlex (flex, column, nowrap, space-around, center);
+                    margin: 10px;
+                    button{
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 16px, center, $blancoamarillo );
+                    }
+                }
+            }
+            /* Sección 'Inicia sesión' */
+            .iniciaSesion{
+                grid-area: iniciaSesion;
+                background-color: $celesteverdozo;
+                @include dFlex (flex, column, nowrap, center, center);
+                border-radius: 20px;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                .iSFormulario{
+                    @include dFlex (flex, column, nowrap, center, center);
+                    form{
+                        @include text (Edu VIC WA NT Beginner, 500, normal, 16px, center, $azulosc )
+                    }
+                    button{
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 16px, center, $blancoamarillo );
+                    }
+                }
+            }
+            /* Sección 'Suscribite' */
+            .suscribite{
+                grid-area: suscribite;
+                background-color: $celesteverdozo;
+                @include dFlex (flex, column, nowrap, space-around,center);
+                border-radius: 20px;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                padding-left: 0px;
+                padding-right: 00px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                h2 {
+                    @include text ("Belanosima" sans-serif , 500, normal, 40px, center, $azulosc )
+                }
+                .sFormulario{
+                    @include dFlex (flex, column, nowrap, space-around, center);
+                    form{ 
+                        @include dFlex (flex, row, wrap, space-around, center);
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $azulosc )
+                    }
+                    button{
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 16px, center, $blancoamarillo );
+                    }
+                }
+            }    
+        }
+    }
+}
+/*Fin Media query pedidos 420 */
+}

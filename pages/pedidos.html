@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--title seo-->
+     <title>Alvarito Market | Hace tu Pedido Aqui y te lo Llevamos a tu Casa</title>
+     <link rel="shortcut icon" href="../images/favico/favicon.ico">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--meta seo-->
+     <meta name="description" content="Accede a tu cuenta en Miniservice Alvarito, suscríbete a nuestras actualizaciones y realiza tus pedidos fácilmente. Disfruta de una experiencia de compra personalizada en nuestra tienda online.">
+     <!--keywords seo-->
+     <meta name="keywords" content="Miniservice Alvarito, pedidos, comprar alimentos online, inicio de sesión, suscripción, tienda online, alimentos frescos, productos locales, Tucumán">
+     <!--Dependencias de Bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <!--AOS-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!--estilo-->
+     <link rel="stylesheet" href="../css/estilo.css">
+     <!--fuente no titulo-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap" rel="stylesheet">
+     <!--fuente titulo-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+ </head>
+ <!--body box-->
+ <body>
+      <header id="arriba">
+          <!--barra superior-->
+          <div class="barraSuperior">
+              <img class="logo1"src="../images/generales/icono.png" alt="logo alvarito">
+          </div>
+          <!--barra nav-->
+          <section class="barra2">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                               <a class="nav-link" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                               <a class="nav-link dropdown-toggle" href="#" role="button"  data-bs-toggle="dropdown" aria-expanded="false">
+                                  MENU
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../pages/productos.html">PRODUCTOS</a></li>
+                                    <li><a class="dropdown-item" href="../pages/pedidos.html">PEDIDOS</a></li>
+                                    <li><a class="dropdown-item" href="../pages/encontranos.html">ENCONTRANOS AQUI</a></li>
+                                    <li><a class="dropdown-item" href="../pages/sobre nosotros.html">SOBRE NOSOTROS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#ofertas">OFERTAS</a>
+                             </li>
+                       </ul>
+                       <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn " type="submit"><img class="logoSerch" src="../images/generales/serch.png"alt="logo serch"></imgsrc></button>
+                       </form>
+                    </div>
+               </div>
+           </nav>
+       </section> 
+      </header>
+      <main class="mainIndex">
+          <div class="pedidos">
+             <!--titulo pedidos -->
+             <div class="tituloPedidos">
+                  <h2 data-aos="fade-down"
+                  data-aos-duration="1000" > HACE TU PEDIDO
+                  </h2>
+              </div>
+              <!--formulario pedidos -->
+              <div data-aos="fade-left" class="formularioPedidos">
+                 <form class="formIzquierda" >
+                      <div>
+                          <label for="name"> *Nombre:</label>
+                          <input type="text" name="name" placeholder="Alvarito" required >
+                       </div>
+                       <div>
+                          <label for="surname"> *Apellido:</label>
+                          <input type="text" name="surname" placeholder="Campo" required>
+                      </div>
+                       <div>
+                          <label for="email"> *E-mail:</label>
+                          <input type="email" name="email" placeholder="Escribe tu email aqui" required>
+                      </div>
+                       <div>
+                          <label for="phone"> N° Celular:</label> 
+                          <input  type="tel" name="phone" placeholder="Escribe tu numero de celular">
+                      </div>
+                      <div>
+                          <label for="address"> Direccion:</label>
+                          <input type="text" name="address" placeholder="Escribe tu direccion">
+                      </div>
+                      <div>
+                          <label for="envio o retiro"></label>
+                          <input type="checkbox" name="envio o retiro" value="retiro"> Retiro del local
+                          <input type="checkbox" name="envio o retiro" value="retiro"> Envio a casa
+                      </div>
+                 </form>
+                 <form class="formDerecha">
+                       <div>
+                          <p>Escribe tu pedido</p>
+                          <textarea name="comentario" cols="30" rows="6" ></textarea>
+                      </div>
+                      <button type="submit" class="botonEnviar">Enviar Pedido</button>
+                 </form>
+              </div>
+              <!--inicio de sesion -->
+              <div data-aos="fade-right" class="iniciaSesion">
+                  <h2 id="iniciasesion"> INICIA SESION
+                  </h2>
+                  <section class="iSFormulario">
+                      <form>
+                           <div class="mb-3">
+                               <label for="exampleInputEmail1"   class="form-label">E-mail:</label>
+                               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email">
+                               <div id="emailHelp" class="form-text">Nosotros nunca compartiremos tu email.</div>
+                          </div>
+                           <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                      </form>
+                      <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+                 </section>
+              </div>
+              <!--suscribite -->
+              <div data-aos="fade-left" class="suscribite">
+                  <h2 id="suscribite"> SUSCRIBITE
+                 </h2>
+                 <section class="sFormulario">
+                      <form>
+                         <div class="mb-3">
+                             <label for="exampleInputName" class="form-label">Nombre Completo:</label>
+                             <input type="text" class="form-control" id="exampleInputName" aria-describedby="Nombre" placeholder="Alvaro" required>
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">E-mail:</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email" required>
+                         </div>
+                         <div class="mb-3">
+                               <label for="exampleInputphone" class="form-label">N° Celular:</label>
+                               <input type="phone" class="form-control"   id="exampleInputphone" aria-describedby="Numero de celular"
+                               placeholder="Escribe tu numero de celular" required>
+                         </div>
+                          <div class="mb-3">
+                              <label for="exampleInputPassword1"  class="form-label">Contraseña:</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                      </form>
+                      <button type="submit" class="btn btn-primary">Guardar y Suscribirte</button>
+                  </section>
+              </div>
+           </div>
+      </main>
+     <!--footer -->
+     <footer>
+        <div>
+            <a href="#arriba"><img class="flecha" src="../images/generales/flecha.png" alt="flecha"></a>
+        </div>
+        <div>
+           <a href="../index.html"><img class="logoFooter" src="../images/favico/Icono.ico" alt="logo footer"></a>
+        </div>
+        <div class="redesSociales">   
+            <p>SEGUINOS EN NUESTRAS REDES</p>  
+            <div class="img">
+                <a href="https://www.instagram.com/belu.gs/" target="_blank"><img class="imgRedes" src="../images/generales/insta.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/gramajosoriamb"  target="_blank"><img class="imgRedes"src="../images/generales/facebook.png"></a>
+                <a href="https://wa.me/3816208957" target="_blank"><img class="imgRedes" src="../images/generales/whatsapp.png"   alt="whatsapp"></a>
+             </div> 
+         </div>  
+      </footer>
+       <!--Dependencias de javascript para Bootstrap-->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+       <!--AOS-->
+       <script>
+        AOS.init();
+      </script>
+  </body>
+</html>

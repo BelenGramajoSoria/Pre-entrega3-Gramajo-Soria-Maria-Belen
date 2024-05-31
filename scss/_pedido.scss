@@ -1,0 +1,119 @@
+/* Estilos para la página 'Pedidos' */
+body{
+    .mainIndex{
+        .pedidos {
+            display: grid; 
+            grid-auto-columns: 1fr; 
+            grid-auto-rows: 1fr; 
+            grid-template-columns: 0.8fr 1.2fr; 
+            grid-template-rows: 200px 420px 400px; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+              "tituloPedidos tituloPedidos"
+              "formularioPedidos formularioPedidos"
+              "iniciaSesion suscribite"; 
+            width: 100vw; 
+            height: auto;
+            padding-bottom: 40px;
+            .tituloPedidos {
+                grid-area: tituloPedidos;
+                background-color:$naranjamed;
+                @include dFlex (flex, column, nowrap, center, center);
+                h2 {
+                    @include text ("Belanosima" sans-serif , 500, normal, 50px, center, $azulosc );
+                    align-self: center;
+                    font-family: "Belanosima", sans-serif;
+                }
+            }
+            /* Formulario 'Pedidos' */
+            .formularioPedidos {
+                grid-area: formularioPedidos;
+                background-color: $naranjacla;
+                @include dFlex (flex, row, nowrap, space-around, center);
+                @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $azulosc );
+                border-radius: 20px;
+                margin: 40px;
+                .formIzquierda{
+                    @include dFlex (flex, column, nowrap, space-around, center);
+                    margin: 20px;
+                }
+                .formDerecha{
+                    @include dFlex (flex, column, nowrap, space-around, center);
+                    margin: 20px;
+                    button{
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $blancoamarillo );
+                        background-color: $azulosc;
+                        border: 0;
+                        padding: 5px;
+                        border-radius: 5px;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+            /* Sección 'Inicia sesión' */
+            .iniciaSesion{
+                grid-area: iniciaSesion;
+                background-color: $celesteverdozo;
+                @include dFlex (flex, column, nowrap, center, center);
+                border-radius: 20px;
+                margin-top: 10px;
+                margin-left: 40px;
+                margin-bottom: 10px;
+                margin-right: 20px;
+                h2 {
+                    @include text ("Belanosima" sans-serif , 500, normal, 40px, center, $azulosc );
+                    font-family: "Belanosima", sans-serif;
+                }
+                .iSFormulario{
+                    @include dFlex (flex, column, nowrap, center, center);
+                    form{
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $azulosc )
+                    }
+                    button{
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $blancoamarillo );
+                        background-color: $azulosc;
+                        border: 0;
+                        &:hover {
+                            transform: scale(1.1);
+                         }
+                    }
+                }
+            }
+            /* Sección 'Suscribite' */
+            .suscribite{
+                grid-area: suscribite;
+                background-color: $celesteverdozo;
+                @include dFlex (flex, column, nowrap, space-around,center);
+                border-radius: 20px;
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                margin-right: 40px;
+                padding-left: 120px;
+                padding-right: 120px;
+                h2 {
+                    @include text ("Belanosima" sans-serif , 500, normal, 40px, center, $azulosc );
+                    font-family: "Belanosima", sans-serif;
+                }
+                .sFormulario{
+                    @include dFlex (flex, column, nowrap, space-around, center);
+                    form{ 
+                        @include dFlex (flex, row, wrap, space-around, center);
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $azulosc )
+                    }
+                    button{
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $blancoamarillo );
+                        background-color: $azulosc;
+                        border: 0;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }    
+        }
+    }
+}
+
