@@ -949,9 +949,21 @@ body {
                    margin-left: 0rem;
                    @include dFlex (flex, column, nowrap, center, center);
     
+                   .inicioSuscripcion {
+                    position: absolute;
+                    top: 10%;
+                    left: 70vw;
+                    z-index: 100;
+                    transform: translate(-50%, -50%);
+                    margin-left: 20rem;
+                    @include dFlex (flex, column, nowrap, center, center);
+                        
+                     }
                   .boton{
                        margin-bottom: 0px;
-                       margin: 10px;
+                       margin: 5px;
+                       padding: 8px;
+                       @include text ("Belanosima" sans-serif , 400, normal, 19px, center, $blancoamarillo );
                     }
                 }
             }
@@ -965,8 +977,8 @@ body {
                 .aLaIzquierda {
                     @include dFlex (flex, row, nowrap, center, center);
                     .logoNaranja {
-                        width: 90px;
-                        height: 90px;
+                        width: 100px;
+                        height: 100px;
                     }
                     .palabras {
                         @include dFlex (flex, column, nowrap, center, center);
@@ -986,9 +998,9 @@ body {
                         padding-right: 70px;
     
                         .logosPedidos {
-                            width: 100px;
-                            height: 100px;
-                            margin: 15px;
+                            width: 110px;
+                            height: 110px;
+                            margin: 10px;
                         }
                         .logosPedidos2 {
                             width: 10px;
@@ -1029,28 +1041,26 @@ body {
             }
           /* Sección recetas */
            .recetasBox {
-                padding-bottom: 10px;
+                padding-bottom: 0px;
+                margin-bottom: 0px;
                h2 {
                     @include text ("Belanosima" sans-serif , 250, normal, 45px, center, $blancoamarillo);
                     font-family: "Belanosima", sans-serif;
-                    background-color:#07838d;
                     padding-top: 15px;
+                    text-align: center
                 }
                 p {
                     @include text ("Edu VIC WA NT Beginner", 500, normal, 25px, center, $azulosc );
                     margin-bottom: 10px;
                 }
                .iframe {
-                    @include dFlex (flex, column, nowrap, space-evenly, center);
-                    margin-top: 50px;
-                    margin-bottom: -15px;
+                    @include dFlex (flex, column, nowrap, space-between, center);
+                    margin-top: 0px;
+                    margin-bottom: 0px;
                     .ratio{
-                       justify-content: space-evenly;
+                       margin: 20px;
                        &:hover {
-                           margin: 5px;
-                           transform: scale(1.2);
-                           transition: transform 0.1s;
-                           z-index: 1;
+                           transform: none;
                         }
                     }   
                 }

@@ -84,14 +84,15 @@ main{
         }
         .listaImagenes{
             list-style: none;
+            text-decoration: none!important;
             @include dFlex (flex, row, wrap, center, center);
             li{
                 text-align: center;
-                list-style-type: none;
-                p{
+                
+                .cateletra{
                     @include text ("Belanosima" sans-serif , 400, normal, 30px, center, $azulosc );
                     font-family: "Belanosima", sans-serif;
-                   margin: 20px;
+                    margin: 20px;
                 }
                 .produc{
                     width: 350px;
@@ -108,7 +109,8 @@ main{
         h2{
             @include text ("Belanosima" sans-serif , 400, normal, 55px, center, $celesteclaro );
             font-family: "Belanosima", sans-serif;
-            margin: 20px;
+            background-color: $azulosc;
+            padding: 10px;
         }
         h3{
             @include text ("Belanosima" sans-serif , 400, normal, 30px, center, $azulosc );
