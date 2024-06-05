@@ -1756,7 +1756,7 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
   }
   main .tituloProductosBox .tituloProductos {
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 120px auto auto;
     grid-auto-flow: row;
     grid-template-areas: "tituloProd" "inSus" "pedidoBox";
     height: auto;
