@@ -153,7 +153,20 @@ body{
  /* media query productos 768px*/
  main{
     .tituloProductosBox{
-        .tituloProductos{  
+        .tituloProductos{ 
+            .vacio { 
+                grid-area: vacio; 
+            }
+            .tituloProd { 
+                h2 { 
+                    @include text ("Belanosima" sans-serif , 400, normal, 45px, center, $azulosc);
+                    font-family: "Belanosima", sans-serif;
+                }  
+            }
+            .inSus{
+                padding-right: 50px;
+                padding-left: 50px;
+            }
             .pedidoBox {
                 .guiaDePedidos2{ 
                     ul{
@@ -167,19 +180,6 @@ body{
                             height: 30px;
                         }
                     }
-                }
-            }
-            .tituloProd { 
-                h2 { 
-                    @include text ("Belanosima" sans-serif , 400, normal, 45px, center, $azulosc);
-                    font-family: "Belanosima", sans-serif;
-                }
-                .inicioSusc{
-                    padding-right: 50px;
-                    padding-left: 50px;
-                }
-                .vacio { 
-                    grid-area: vacio; 
                 }
             }
         }
@@ -569,13 +569,12 @@ body {
     main{
         .tituloProductosBox{
             .tituloProductos{  
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr auto auto auto;
+                grid-template-columns: auto;
+                grid-template-rows: auto auto auto;
                 grid-auto-flow: row;
                 grid-template-areas:
                 "tituloProd"
-                "inicioSusc"
-                "pedidoBox"
+                "inSus"
                 "pedidoBox";
                 height: auto;
 
@@ -605,27 +604,27 @@ body {
                         @include text ("Belanosima" sans-serif , 400, normal, 40px, center, $azulosc);
                         font-family: "Belanosima", sans-serif;
                     }
-                    .inicioSusc{
-                        grid-area: inicioSusc; 
-                        @include dFlex (flex, column, nowrap, center, center);
-                        padding-right: 0px;
-                        padding-left: 0px;
-                        a{
-                            text-decoration: none;
-                            background-color: $azulosc;
-                            border-radius: 10px;
-                            @include text ("Belanosima" sans-serif , 400, normal, 20px, center, $blancoamarillo );
-                            font-family: "Belanosima", sans-serif;
-                            padding: 10px;
-                            margin-bottom: 10px;
-                            &:hover {
-                                background-color: $naranjamed;
-                            }
+                }
+                .inSus{
+                    grid-area: inSus; 
+                    @include dFlex (flex, column, nowrap, center, center);
+                    padding-right: 0px;
+                    padding-left: 0px;
+                    .botonIs{
+                        text-decoration: none;
+                        background-color: $azulosc;
+                        border-radius: 10px;
+                        @include text ("Belanosima" sans-serif , 400, normal, 20px, center, $blancoamarillo );
+                        font-family: "Belanosima", sans-serif;
+                        padding: 10px;
+                        margin-bottom: 10px;
+                        &:hover {
+                            background-color: $naranjamed;
                         }
                     }
-                    .vacio { 
-                        grid-area: vacio; 
-                    }
+                }
+                .vacio { 
+                    grid-area: vacio; 
                 }
     
             }

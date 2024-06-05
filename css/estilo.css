@@ -463,10 +463,57 @@ main .tituloProductosBox .tituloProductos {
   grid-auto-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "vacio tituloProd inicioSusc" "pedidoBox pedidoBox pedidoBox";
+  grid-template-areas: "vacio tituloProd boton" "pedidoBox pedidoBox pedidoBox";
   width: 100vw;
   height: auto;
   background-color: rgba(255, 72, 0, 0.9);
+}
+main .tituloProductosBox .tituloProductos .vacio {
+  grid-area: vacio;
+}
+main .tituloProductosBox .tituloProductos .tituloProd {
+  grid-area: tituloProd;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+main .tituloProductosBox .tituloProductos .tituloProd h2 {
+  font-family: "Belanosima" sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 55px;
+  text-align: center;
+  color: #062c45;
+  font-family: "Belanosima", sans-serif;
+}
+main .tituloProductosBox .tituloProductos .inSus {
+  grid-area: boton;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-right: 120px;
+  padding-left: 120px;
+}
+main .tituloProductosBox .tituloProductos .inSus .botonIs {
+  text-decoration: none;
+  background-color: #062c45;
+  border-radius: 10px;
+  font-family: "Belanosima" sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #f8f5e5;
+  font-family: "Belanosima", sans-serif;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+main .tituloProductosBox .tituloProductos .inSus .botonIs:hover {
+  background-color: #ff5e01;
 }
 main .tituloProductosBox .tituloProductos .pedidoBox {
   grid-area: pedidoBox;
@@ -490,53 +537,6 @@ main .tituloProductosBox .tituloProductos .pedidoBox .guiaDePedidos2 ul .logosPe
 main .tituloProductosBox .tituloProductos .pedidoBox .guiaDePedidos2 ul .logosPedidos2 {
   width: 30px;
   height: 50px;
-}
-main .tituloProductosBox .tituloProductos .tituloProd {
-  grid-area: tituloProd;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-main .tituloProductosBox .tituloProductos .tituloProd h2 {
-  font-family: "Belanosima" sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 55px;
-  text-align: center;
-  color: #062c45;
-  font-family: "Belanosima", sans-serif;
-}
-main .tituloProductosBox .tituloProductos .tituloProd .inicioSusc {
-  grid-area: inicioSusc;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  padding-right: 120px;
-  padding-left: 120px;
-}
-main .tituloProductosBox .tituloProductos .tituloProd .inicioSusc a {
-  text-decoration: none;
-  background-color: #062c45;
-  border-radius: 10px;
-  font-family: "Belanosima" sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  text-align: center;
-  color: #f8f5e5;
-  font-family: "Belanosima", sans-serif;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-main .tituloProductosBox .tituloProductos .tituloProd .inicioSusc a:hover {
-  background-color: #ff5e01;
-}
-main .tituloProductosBox .tituloProductos .tituloProd .vacio {
-  grid-area: vacio;
 }
 main .tiposDeProductosBox {
   display: flex;
@@ -1301,14 +1301,8 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
     /*seccion guia de pedidos*/
     /*seccion grupo de productos*/
   }
-  main .tituloProductosBox .tituloProductos .pedidoBox .guiaDePedidos2 ul .logosPedidos {
-    width: 130px;
-    height: 130px;
-    margin-left: 0px;
-  }
-  main .tituloProductosBox .tituloProductos .pedidoBox .guiaDePedidos2 ul .logosPedidos2 {
-    width: 20px;
-    height: 30px;
+  main .tituloProductosBox .tituloProductos .vacio {
+    grid-area: vacio;
   }
   main .tituloProductosBox .tituloProductos .tituloProd h2 {
     font-family: "Belanosima" sans-serif;
@@ -1319,12 +1313,18 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
     color: #062c45;
     font-family: "Belanosima", sans-serif;
   }
-  main .tituloProductosBox .tituloProductos .tituloProd .inicioSusc {
+  main .tituloProductosBox .tituloProductos .inSus {
     padding-right: 50px;
     padding-left: 50px;
   }
-  main .tituloProductosBox .tituloProductos .tituloProd .vacio {
-    grid-area: vacio;
+  main .tituloProductosBox .tituloProductos .pedidoBox .guiaDePedidos2 ul .logosPedidos {
+    width: 130px;
+    height: 130px;
+    margin-left: 0px;
+  }
+  main .tituloProductosBox .tituloProductos .pedidoBox .guiaDePedidos2 ul .logosPedidos2 {
+    width: 20px;
+    height: 30px;
   }
   main .tiposDeProductosBox {
     display: flex;
@@ -1754,10 +1754,10 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
     /*seccion grupo de productos*/
   }
   main .tituloProductosBox .tituloProductos {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
     grid-auto-flow: row;
-    grid-template-areas: "tituloProd" "inicioSusc" "pedidoBox" "pedidoBox";
+    grid-template-areas: "tituloProd" "inSus" "pedidoBox";
     height: auto;
   }
   main .tituloProductosBox .tituloProductos .pedidoBox {
@@ -1797,8 +1797,8 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
     color: #062c45;
     font-family: "Belanosima", sans-serif;
   }
-  main .tituloProductosBox .tituloProductos .tituloProd .inicioSusc {
-    grid-area: inicioSusc;
+  main .tituloProductosBox .tituloProductos .inSus {
+    grid-area: inSus;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1807,7 +1807,7 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
     padding-right: 0px;
     padding-left: 0px;
   }
-  main .tituloProductosBox .tituloProductos .tituloProd .inicioSusc a {
+  main .tituloProductosBox .tituloProductos .inSus .botonIs {
     text-decoration: none;
     background-color: #062c45;
     border-radius: 10px;
@@ -1821,10 +1821,10 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
     padding: 10px;
     margin-bottom: 10px;
   }
-  main .tituloProductosBox .tituloProductos .tituloProd .inicioSusc a:hover {
+  main .tituloProductosBox .tituloProductos .inSus .botonIs:hover {
     background-color: #ff5e01;
   }
-  main .tituloProductosBox .tituloProductos .tituloProd .vacio {
+  main .tituloProductosBox .tituloProductos .vacio {
     grid-area: vacio;
   }
   main .tiposDeProductosBox {

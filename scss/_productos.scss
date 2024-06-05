@@ -10,11 +10,40 @@ main{
             gap: 0px 0px;
             grid-auto-flow: row;
             grid-template-areas:
-                "vacio tituloProd inicioSusc"
+                "vacio tituloProd boton"
                 "pedidoBox pedidoBox pedidoBox";
             width: 100vw;
             height: auto;
             background-color:$naranjaosc;
+            .vacio { 
+                grid-area: vacio; 
+            }
+            .tituloProd { 
+                grid-area: tituloProd; 
+                @include dFlex (flex, row, nowrap, center, center);
+                h2 { 
+                    @include text ("Belanosima" sans-serif , 400, normal, 55px, center, $azulosc);
+                    font-family: "Belanosima", sans-serif;
+                }
+            }
+            .inSus {
+                grid-area: boton; 
+                @include dFlex (flex, column, nowrap, center, center);
+                padding-right: 120px;
+                padding-left: 120px;
+                .botonIs{
+                    text-decoration: none;
+                    background-color: $azulosc;
+                    border-radius: 10px;
+                    @include text ("Belanosima" sans-serif , 400, normal, 20px, center, $blancoamarillo );
+                    font-family: "Belanosima", sans-serif;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    &:hover {
+                        background-color: $naranjamed;
+                    }
+                }
+            }
             .pedidoBox {
                 grid-area: pedidoBox;
                 .guiaDePedidos2{ 
@@ -35,37 +64,7 @@ main{
                         }
                     }
                 }
-            }
-            .tituloProd { 
-                grid-area: tituloProd; 
-                @include dFlex (flex, row, nowrap, center, center);
-                h2 { 
-                    @include text ("Belanosima" sans-serif , 400, normal, 55px, center, $azulosc);
-                    font-family: "Belanosima", sans-serif;
-                }
-                .inicioSusc{
-                    grid-area: inicioSusc; 
-                    @include dFlex (flex, column, nowrap, center, center);
-                    padding-right: 120px;
-                    padding-left: 120px;
-                    a{
-                        text-decoration: none;
-                        background-color: $azulosc;
-                        border-radius: 10px;
-                        @include text ("Belanosima" sans-serif , 400, normal, 20px, center, $blancoamarillo );
-                        font-family: "Belanosima", sans-serif;
-                        padding: 10px;
-                        margin-bottom: 10px;
-                        &:hover {
-                            background-color: $naranjamed;
-                        }
-                    }
-                }
-                .vacio { 
-                    grid-area: vacio; 
-                }
-            }
-
+            }        
         }
     }
     /*seccion guia de pedidos*/
