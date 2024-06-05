@@ -981,20 +981,19 @@ body {
                 .guiaDePedidos{
                     ul{
                         list-style-type: none;
-                        @include dFlex (flex, row, wrap, space-between, center);
+                        @include dFlex (flex, row, wrap, center, center);
                         margin-left: 30px;
+                        padding-right: 70px;
     
                         .logosPedidos {
                             width: 100px;
                             height: 100px;
-                            margin-left: 7px;
-                            #i4 {
-                                margin-right: 55px;
-                            }
+                            margin: 15px;
                         }
                         .logosPedidos2 {
                             width: 10px;
                             height: 20px;
+                            margin: 0;
                             #f2 {
                                 display: none;
                             }
