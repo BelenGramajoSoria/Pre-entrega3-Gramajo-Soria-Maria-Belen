@@ -507,6 +507,8 @@ body {
                 /* Formulario 'Pedidos' */
                 .formularioPedidos {
                     @include dFlex (flex, column, nowrap, center, center);
+                    @include text ("Edu VIC WA NT Beginner", 500, normal, 24px, center, $azulosc );
+
                     .formIzquierda{
                         @include dFlex (flex, column, nowrap, space-around, center);
                         margin: 0px;
@@ -522,7 +524,7 @@ body {
                     margin-right: 40px;
                     .iSFormulario{
                         form{
-                            @include text (Edu VIC WA NT Beginner, 500, normal, 24px, center, $azulosc );
+                            @include text ("Edu VIC WA NT Beginner", 500, normal, 24px, center, $azulosc );
                         }
                     }
                 }
@@ -533,6 +535,12 @@ body {
                     margin-bottom: 0px;
                     padding-left: 60px;
                     padding-right: 60px;
+                    .sFormulario{
+                        form{
+                            @include text ("Edu VIC WA NT Beginner", 500, normal, 24px, center, $azulosc )
+                        }
+                        
+                    }
                 }    
             }
         }
@@ -754,7 +762,7 @@ body {
                     padding-left: 0;
                     padding-right: 0;
                     @include dFlex (flex, row, nowrap, center, center);
-                    max-width: 100vw;
+                    max-width: 95vw;
                 }
                 /* Horarios */
                 .horarios {
@@ -763,6 +771,8 @@ body {
                     @include dFlex (flex, column, nowrap, center, center);
                     width: 100vw;
                     margin-right: 0px;
+                    margin-top: 8px;
+                    margin-bottom: 8px;
                     h2 {
                         @include text ("Belanosima" sans-serif , 500, normal, 30px, center, $azulosc );
                         font-family: "Belanosima", sans-serif;
@@ -776,8 +786,10 @@ body {
                     grid-area: trabaja;
                     background-color: $celesteclaro;
                     @include dFlex (flex, column, nowrap, center, center);
-                    margin-left: 0px;
+                    margin-top: 8px;
+                    margin-bottom: 8px;
                     width: 100vw;
+                    margin-left: 0px;
                     h2 {
                         margin-top: 10px;
                         @include text ("Belanosima" sans-serif , 300, normal, 30px, center, $azulosc );
@@ -880,7 +892,7 @@ body {
             }
             #navbarSupportedContent{
                 background-color: rgba(255, 255, 255, 0.4);
-                text-decoration-color: #062c45;
+                text-decoration-color: $azulosc;
                 border-radius: 20px;
             }
 
@@ -889,7 +901,7 @@ body {
             /*seccion bienvenidos*/
             .videobv {
                 max-height: 700px;
-                margin-bottom: -15px;
+                margin-bottom: -17px;
     
                 .video {
                     width: 100vw;
@@ -902,11 +914,11 @@ body {
                     }
                     @keyframes tituloAnimado{
                         0%{
-                            font-size: 30px;
+                            font-size: 40px;
                             color: $azulosc;
                         }
                         25%{
-                            font-size: 40px;
+                            font-size: 45px;
                             color: $celesteverdozo;
                         }
                         50%{
@@ -914,11 +926,11 @@ body {
                             color: $celesteclaro;
                         }
                         75%{
-                            font-size: 40px;
+                            font-size: 45px;
                             color: $naranjamed;
                         }
                         100%{
-                            font-size: 30px;
+                            font-size: 40px;
                             color: $naranjacla;
                         }
                     }
@@ -943,11 +955,11 @@ body {
                         }
                         75%{
                             font-size: 25px;
-                            color: $naranjamed;
+                            color: $celesteverdozo;
                         }
                         100%{
                             font-size: 18px;
-                            color: $naranjacla;
+                            color: $azulosc;
                         }
                     }
                 }
@@ -983,7 +995,7 @@ body {
                 @include dFlex (flex, column, nowrap, center, center);
                 height: auto;
                 padding-top: 20px;
-                margin-bottom: -15px;
+                margin-bottom: -17px;
     
                 .aLaIzquierda {
                     @include dFlex (flex, row, nowrap, center, center);
@@ -1025,12 +1037,16 @@ body {
                 }
             } 
             .separadorDePagina{
+                background-image: url(../images/generales//fondo5.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
                 height: 8rem;
             }
             /*seccion ofertas*/
            .ofertasBox {
                height: auto;
-               margin-bottom: -15px;
+               margin-bottom: -17px;
                h2 {
                    font-size: 45px;
                    padding: 10px;
