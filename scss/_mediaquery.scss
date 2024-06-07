@@ -734,7 +734,7 @@ body {
                     @include dFlex (flex, column, nowrap, center, center);
                     margin-left: 10px;
                     margin-right: 10px;
-                    width: 100vw;
+                    width: 90vw;
                 
                     p {
                         @include text ("Edu VIC WA NT Beginner", 500, normal, 20px, center, $celesteclaro );
@@ -762,14 +762,14 @@ body {
                     padding-left: 0;
                     padding-right: 0;
                     @include dFlex (flex, row, nowrap, center, center);
-                    max-width: 95vw;
+                    max-width: 90vw;
                 }
                 /* Horarios */
                 .horarios {
                     grid-area: horarios;
                     background-color: $celesteverdozo;
                     @include dFlex (flex, column, nowrap, center, center);
-                    width: 100vw;
+                    width: 90 vw;
                     margin-right: 0px;
                     margin-top: 8px;
                     margin-bottom: 8px;
@@ -788,7 +788,7 @@ body {
                     @include dFlex (flex, column, nowrap, center, center);
                     margin-top: 8px;
                     margin-bottom: 8px;
-                    width: 100vw;
+                    width: 90vw;
                     margin-left: 0px;
                     h2 {
                         margin-top: 10px;
@@ -927,11 +927,11 @@ body {
                         }
                         75%{
                             font-size: 45px;
-                            color: $naranjamed;
+                            color: $celesteverdozo;
                         }
                         100%{
                             font-size: 40px;
-                            color: $naranjacla;
+                            color: $azulosc;
                         }
                     }
                     p {
