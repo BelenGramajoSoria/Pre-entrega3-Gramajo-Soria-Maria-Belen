@@ -12,11 +12,13 @@ body {
             display: flex;
             justify-content: center;
             width: 100vw;
-            .logo1 {
-                width: 160px;
-                height: 160px;
+            .imgLog{
                 z-index: 100;
-                margin-top: 15px;
+             .logo1 {
+                    width: 160px;
+                    height: 160px;
+                    margin-top: 15px;
+               }
             }
         }
         .barra2{
@@ -321,7 +323,7 @@ body {
                 }
                 
             }
-            h4{
+            h3{
                 @include text ("Belanosima" sans-serif , 300, normal, 40px, center, $azulosc );
                 font-family: "Belanosima", sans-serif;
             }

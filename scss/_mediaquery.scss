@@ -227,9 +227,12 @@ body {
     header{
         .barraSuperior{
             height: 100px;
-            .logo1 {
-                width: 130px;
-                height: 130px;
+            .imgLog{
+                z-index: 100;
+             .logo1 {
+                    width: 130px;
+                    height: 130px;
+               }
             }
         }
         .barra2{
@@ -457,7 +460,7 @@ body {
             .card{
                 margin-bottom: 40px;
             }
-            h4{
+            h3{
                 @include text ("Belanosima" sans-serif , 300, normal, 40px, center, $azulosc );
                 font-family: "Belanosima", sans-serif;
             }
@@ -867,6 +870,14 @@ body {
     /* Media query index 420 */
       body {
         header{
+            .barraSuperior{
+                .imgLog{
+                 .logo1 {
+                        width: 120px;
+                        height: 120px;
+                   }
+                }
+            }
             #navbarSupportedContent{
                 background-color: rgba(255, 255, 255, 0.4);
                 text-decoration-color: #062c45;

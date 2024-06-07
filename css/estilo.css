@@ -15,10 +15,12 @@ body header .barraSuperior {
   justify-content: center;
   width: 100vw;
 }
-body header .barraSuperior .logo1 {
+body header .barraSuperior .imgLog {
+  z-index: 100;
+}
+body header .barraSuperior .imgLog .logo1 {
   width: 160px;
   height: 160px;
-  z-index: 100;
   margin-top: 15px;
 }
 body header .barra2 .navbar {
@@ -378,7 +380,7 @@ body .mainIndex .tarjetaVisita .card .btn-custom:hover {
   transform: scale(1.2);
   transition: transform 0.3s;
 }
-body .mainIndex .tarjetaVisita h4 {
+body .mainIndex .tarjetaVisita h3 {
   font-family: "Belanosima" sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -1384,7 +1386,10 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
   body header .barraSuperior {
     height: 100px;
   }
-  body header .barraSuperior .logo1 {
+  body header .barraSuperior .imgLog {
+    z-index: 100;
+  }
+  body header .barraSuperior .imgLog .logo1 {
     width: 130px;
     height: 130px;
   }
@@ -1664,7 +1669,7 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
   body .mainIndex .tarjetaVisita .card {
     margin-bottom: 40px;
   }
-  body .mainIndex .tarjetaVisita h4 {
+  body .mainIndex .tarjetaVisita h3 {
     font-family: "Belanosima" sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -2119,6 +2124,10 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
   body {
     /* Footer */
   }
+  body header .barraSuperior .imgLog .logo1 {
+    width: 120px;
+    height: 120px;
+  }
   body header #navbarSupportedContent {
     background-color: rgba(255, 255, 255, 0.4);
     text-decoration-color: #062c45;
@@ -2401,7 +2410,7 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
     transform: scale(1.2);
     transition: transform 0.3s;
   }
-  body .mainIndex .tarjetaVisita h4 {
+  body .mainIndex .tarjetaVisita h3 {
     font-family: "Belanosima" sans-serif;
     font-weight: 300;
     font-style: normal;
