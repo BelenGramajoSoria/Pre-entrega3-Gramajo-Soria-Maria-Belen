@@ -314,13 +314,8 @@ body {
             }            
         }
         .logoFooter {
-            width: 120px;
-            height: 120px;
-            margin-left: 130px;
-            &:hover {
-                transform: scale(1.2);
-                transition: transform 0.3s;
-            } 
+           display: none;
+           
         }
         .redesSociales {
             @include dFlex (flex, column, nowrap, center, center);
@@ -845,4 +840,83 @@ body{
 }
 /* Fin pedidos 420 */
 
+}
+ /* Media query 420 */
+ @media screen and (min-width: 1760px) {
+    /*seccion productos*/
+main{
+    .tiposDeProductosBox{
+        .listaImagenes{
+            list-style: none;
+            @include dFlex (flex, row, wrap, center, center);
+            margin-left: 26.25rem;
+            margin-right: 18rem;
+            margin-top: -13.75rem;
+            li{
+                text-align: center;
+                a{
+                    text-decoration: none;
+                }
+                .cateletra{
+                    @include text ("Belanosima" sans-serif , 400, normal, 30px, center, $naranjaosc);
+                    font-family: "Belanosima", sans-serif;
+                }
+                .produc{
+                    width: auto;
+                    height: 250px;
+                    margin: 15px;
+                    &:hover{
+                       transform: scale(1.1);
+                    }
+                }
+            } 
+        }         
+    }
+}
+/*index*/
+/*body box*/
+body {
+    .mainIndex{
+        /* Cards */
+        .tarjetaVisita {
+            @include dFlex (flex, row, nowrap, center, center);
+            height: 62.5rem;
+            background-image: url(../images/generales/hoja2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            img{
+                width: 15rem;
+            }
+            #card1{
+                transform: rotate(1deg) translateY(30px);
+                margin-left: 4rem;
+            }
+            #card2{
+                transition: box-shadow .25s cubic-bezier(.4,0,.2,1) 0ms;
+            }
+            #card3{
+                transform: rotate(-2deg) translateY(12px);
+            }
+            .card{   
+                background-color: $naranjaosc;
+                width: 15rem;
+                height: 25rem;
+                margin: 1.25rem;
+                margin-top: -6rem;
+                box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.7);
+                .btn-custom {
+                    background-color:$naranjacla
+                    ;
+                    @include text ("Belanosima" sans-serif, 300, normal, 1.25rem, center, $naranjaosc );
+                    font-family: "Belanosima", sans-serif;
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: transform 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
+/*fin-index*/
 }

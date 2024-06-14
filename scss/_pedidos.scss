@@ -55,10 +55,22 @@ body{
                     .formIzquierda{
                         @include dFlex (flex, column, nowrap, space-between, center);
                         margin: 20px;
+                        input{
+                            border: none;
+                            border-radius: 10px;
+                        }
                     }
                     .formDerecha{
                         @include dFlex (flex, column, nowrap, space-around, center);
                         margin: 20px;
+                        input{
+                            border: none;
+                            border-radius: 10px;
+                        }
+                        textarea{
+                            border: none;
+                            border-radius: 10px;
+                        }
                         button{
                             @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $blancoamarillo );
                             background-color: $naranjaosc;
@@ -125,7 +137,7 @@ body{
                 padding-left: 120px;
                 padding-right: 120px;
                 h2 {
-                    @include text ("Belanosima" sans-serif , 500, normal, 40px, center, $celesteclaro);
+                    @include text ("Belanosima" sans-serif , 500, normal, 40px, center, $naranjaosc);
                     font-family: "Belanosima", sans-serif;
                     padding-top: 10px;
                 }
@@ -134,7 +146,7 @@ body{
                     padding-top: -10px;
                     form{ 
                         @include dFlex (flex, row, wrap, space-around, center);
-                        @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $celesteclaro )
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $naranjaosc )
                     }
                     button{
                         @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $blancoamarillo );
