@@ -36,29 +36,9 @@ body{
                 margin-right: 3.125rem;
                 padding: 1.25rem;
                 box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.7);
-                .chinche1{
-                    position: absolute;
-                    z-index: 100;
-                    bottom: 104rem;
-                    left: 16rem;
-                    width: 130px;
-                    height: 130px;
-                }
-                .chinche2{
-                    position: absolute;
-                    z-index: 100;
-                    bottom: 68rem;
-                    left: 16rem;
-                    width: 130px;
-                    height: 130px;
-                }
-                .chinche3{
-                    position: absolute;
-                    z-index: 100;
-                    bottom: 31rem;
-                    left: 16rem;
-                    width: 130px;
-                    height: 130px;
+                img{
+                    width: 380px;
+                    height: auto;
                 }
             }
             /* Texto introductorio */
@@ -83,7 +63,7 @@ body{
                     list-style-type: none;
                     margin: 80px;
                     .str{
-                        @include text ("Belanosima" sans-serif , 200, normal, 26px, center, $blancoamarillo);
+                        @include text ("Belanosima" sans-serif , 200, normal, 26px, center, $azulosc);
                        font-family: "Belanosima", sans-serif;
                     }
                 }

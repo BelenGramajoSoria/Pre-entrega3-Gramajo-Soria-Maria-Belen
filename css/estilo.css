@@ -47,7 +47,7 @@ body header .barra2 .navbar .container-fluid .navbar-toggler .navbar-toggler-ico
 }
 body header .barra2 .navbar .container-fluid .collapse .logoSerch {
   margin-right: 40px;
-  width: 30px;
+  width: 32px;
   height: auto;
 }
 body header .barra2 .navbar .container-fluid .collapse .logoSerch:hover {
@@ -409,7 +409,7 @@ body .mainIndex .tarjetaVisita {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  height: 1000px;
+  height: 62.5rem;
   background-image: url(../images/generales/hoja2.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -419,7 +419,7 @@ body .mainIndex .tarjetaVisita img {
 }
 body .mainIndex .tarjetaVisita #card1 {
   transform: rotate(1deg) translateY(30px);
-  margin-left: 120px;
+  margin-left: 7.5rem;
 }
 body .mainIndex .tarjetaVisita #card2 {
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -431,8 +431,8 @@ body .mainIndex .tarjetaVisita .card {
   background-color: rgb(68, 145, 111);
   width: 15rem;
   height: 25rem;
-  margin: 20px;
-  margin-top: -220px;
+  margin: 1.25rem;
+  margin-top: -13.75rem;
   box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.7);
 }
 body .mainIndex .tarjetaVisita .card .btn-custom {
@@ -440,7 +440,7 @@ body .mainIndex .tarjetaVisita .card .btn-custom {
   font-family: "Belanosima" sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
   color: rgb(68, 145, 111);
   font-family: "Belanosima", sans-serif;
@@ -453,7 +453,7 @@ body .mainIndex .tarjetaVisita h3 {
   font-family: "Belanosima" sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 28px;
+  font-size: 1.75rem;
   text-align: center;
   color: rgb(244, 242, 235);
   font-family: "Belanosima", sans-serif;
@@ -462,7 +462,7 @@ body .mainIndex .tarjetaVisita p {
   font-family: "Edu VIC WA NT Beginner";
   font-weight: 300;
   font-style: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
   color: rgb(244, 242, 235);
 }
@@ -661,9 +661,9 @@ main .tiposDeProductosBox .listaImagenes {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-left: 420px;
-  margin-right: 190px;
-  margin-top: -220px;
+  margin-left: 26.25rem;
+  margin-right: 11.875rem;
+  margin-top: -13.75rem;
 }
 main .tiposDeProductosBox .listaImagenes li {
   text-align: center;
@@ -1011,29 +1011,9 @@ body .mainIndex .sobreNosotros .franjaV {
   padding: 1.25rem;
   box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.7);
 }
-body .mainIndex .sobreNosotros .franjaV .chinche1 {
-  position: absolute;
-  z-index: 100;
-  bottom: 104rem;
-  left: 16rem;
-  width: 130px;
-  height: 130px;
-}
-body .mainIndex .sobreNosotros .franjaV .chinche2 {
-  position: absolute;
-  z-index: 100;
-  bottom: 68rem;
-  left: 16rem;
-  width: 130px;
-  height: 130px;
-}
-body .mainIndex .sobreNosotros .franjaV .chinche3 {
-  position: absolute;
-  z-index: 100;
-  bottom: 31rem;
-  left: 16rem;
-  width: 130px;
-  height: 130px;
+body .mainIndex .sobreNosotros .franjaV img {
+  width: 380px;
+  height: auto;
 }
 body .mainIndex .sobreNosotros .texto1 {
   grid-area: texto1;
@@ -1076,7 +1056,7 @@ body .mainIndex .sobreNosotros .texto2 .textoLimitado .str {
   font-style: normal;
   font-size: 26px;
   text-align: center;
-  color: rgb(244, 242, 235);
+  color: rgb(15, 129, 139);
   font-family: "Belanosima", sans-serif;
 }
 
@@ -1316,658 +1296,6 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
   transform: scale(1.1);
 }
 
-/* Media query 768px */
-@media screen and (max-width: 768px) {
-  /* media query página 'Sobre nosotros' */
-  /* Contenedor principal */
-  body .mainIndex .sobreNosotros {
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 0.4fr 1fr 0.2fr;
-    grid-template-areas: "tituloSN" "texto1" "texto2" "franjaV";
-    height: auto;
-    /* Título 'Sobre nosotros' */
-    /* Franja vertical */
-    /* Texto introductorio */
-  }
-  body .mainIndex .sobreNosotros .tituloSN {
-    grid-area: tituloSN;
-    width: 100vw;
-  }
-  body .mainIndex .sobreNosotros .tituloSN h2 {
-    font-size: 45px;
-  }
-  body .mainIndex .sobreNosotros .franjaV {
-    width: 100vw;
-    flex-direction: row;
-    margin-right: 0px;
-    justify-content: space-evenly;
-  }
-  body .mainIndex .sobreNosotros .franjaV img {
-    width: 200px;
-    height: 200px;
-  }
-  body .mainIndex .sobreNosotros .texto1 {
-    grid-area: texto1;
-    margin: 60px;
-    max-width: 100vw;
-  }
-  body .mainIndex .sobreNosotros .texto1 p {
-    font-size: 18px;
-  }
-  body .mainIndex .sobreNosotros .texto2 {
-    grid-area: texto2;
-    text-align: center;
-    margin: 0px;
-    width: 100vw;
-  }
-  body .mainIndex .sobreNosotros .texto2 .valoresTitulo {
-    font-size: 20px;
-  }
-  body .mainIndex .sobreNosotros .texto2 .textoLimitado {
-    font-size: 20px;
-  }
-  body .mainIndex .sobreNosotros .texto2 .textoLimitado .str {
-    font-size: 22px;
-  }
-  /* Fin media query de la página 'Sobre nosotros' */
-  /* encontranos Media query 768px */
-  .bodyEncontranos .mainIndex .encontranos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px auto auto auto;
-    gap: 10px;
-    grid-template-areas: "tituloEncontrarnos tituloEncontrarnos " "mapa mapa" "verticalFranja verticalFranja" "trabaja horarios ";
-    height: auto;
-    padding-bottom: 5px;
-    /*Título Encontranos*/
-    /* Franja vertical */
-    /* Mapa */
-    /* Horarios */
-    /* Trabaja con nosotros */
-  }
-  .bodyEncontranos .mainIndex .encontranos .tituloEncontrarnos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-  }
-  .bodyEncontranos .mainIndex .encontranos .tituloEncontrarnos h2 {
-    font-family: "Belanosima" sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 40px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-    font-family: "Belanosima", sans-serif;
-  }
-  .bodyEncontranos .mainIndex .encontranos .verticalFranja {
-    grid-area: verticalFranja;
-    background-color: rgb(15, 129, 139);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .bodyEncontranos .mainIndex .encontranos .verticalFranja p {
-    font-family: "Edu VIC WA NT Beginner";
-    font-weight: 500;
-    font-style: normal;
-    font-size: 20px;
-    text-align: center;
-    color: rgb(244, 214, 217);
-  }
-  .bodyEncontranos .mainIndex .encontranos .verticalFranja .redesSociales2 li {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: baseline;
-    align-items: center;
-    margin-left: 0px;
-    padding-top: 0px;
-  }
-  .bodyEncontranos .mainIndex .encontranos .verticalFranja .redesSociales2 a .imgRedes2 {
-    width: 60px;
-    height: 60px;
-    margin: 0px;
-  }
-  .bodyEncontranos .mainIndex .encontranos .mapa {
-    grid-area: mapa;
-    padding-left: 50px;
-    margin-right: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .bodyEncontranos .mainIndex .encontranos .horarios {
-    grid-area: horarios;
-    background-color: rgb(194, 148, 112);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-right: 50px;
-  }
-  .bodyEncontranos .mainIndex .encontranos .horarios h2 {
-    font-family: "Belanosima" sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 30px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-    font-family: "Belanosima", sans-serif;
-  }
-  .bodyEncontranos .mainIndex .encontranos .horarios p {
-    font-family: "Edu VIC WA NT Beginner";
-    font-weight: 500;
-    font-style: normal;
-    font-size: 22px;
-    text-align: center;
-    color: rgb(244, 214, 217);
-  }
-  .bodyEncontranos .mainIndex .encontranos .trabaja {
-    grid-area: trabaja;
-    background-color: rgb(244, 214, 217);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-left: 50px;
-  }
-  .bodyEncontranos .mainIndex .encontranos .trabaja h2 {
-    margin-top: 10px;
-    font-family: "Belanosima" sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 30px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-    font-family: "Belanosima", sans-serif;
-  }
-  .bodyEncontranos .mainIndex .encontranos .trabaja input, .bodyEncontranos .mainIndex .encontranos .trabaja form {
-    align-self: center;
-    font-family: "Belanosima" sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-    font-family: "Belanosima", sans-serif;
-  }
-  /*fin media query encontranos 768px*/
-  /* media query productos 768px*/
-  main {
-    /*seccion guia de pedidos*/
-    /*seccion grupo de productos*/
-  }
-  main .tituloProductosBox .tituloProductos .vacio {
-    grid-area: vacio;
-  }
-  main .tituloProductosBox .tituloProductos .tituloProd h2 {
-    font-family: "Belanosima" sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 45px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-    font-family: "Belanosima", sans-serif;
-  }
-  main .tituloProductosBox .tituloProductos .inSus {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-  main .tituloProductosBox .tituloProductos .pedidoBox .guiaDePedidos2 ul .logosPedidos {
-    width: 130px;
-    height: 130px;
-    margin-left: 0px;
-  }
-  main .tituloProductosBox .tituloProductos .pedidoBox .guiaDePedidos2 ul .logosPedidos2 {
-    width: 20px;
-    height: 30px;
-  }
-  main .tiposDeProductosBox {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 40px;
-  }
-  main .tiposDeProductosBox h2 {
-    font-family: "Belanosima" sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 45px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-    font-family: "Belanosima", sans-serif;
-    padding-top: 25px;
-  }
-  main .tiposDeProductosBox .listaImagenes {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  main .tiposDeProductosBox .listaImagenes li {
-    text-align: center;
-    text-decoration: none;
-  }
-  main .tiposDeProductosBox .listaImagenes li p {
-    font-family: "Belanosima" sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-    font-family: "Belanosima", sans-serif;
-    margin: 20px;
-  }
-  main .tiposDeProductosBox .listaImagenes li .produc {
-    width: 220px;
-    height: 220px;
-    margin: 25px;
-  }
-  main .tiposDeProductosBox .listaImagenes li .produc:hover {
-    transform: scale(1.2);
-  }
-  /*fin media query productos 768px*/
-  /*media query index 768px*/
-  /*body box*/
-  body {
-    /* Footer */
-  }
-  body header .barraSuperior {
-    height: 100px;
-  }
-  body header .barraSuperior .imgLog {
-    z-index: 100;
-  }
-  body header .barraSuperior .imgLog .logo1 {
-    width: 130px;
-    height: 130px;
-  }
-  body header .barra2 .navbar {
-    height: 55px;
-    background-color: rgb(178, 217, 196);
-  }
-  body header .barra2 .navbar .container-fluid .navbar-toggler {
-    color: rgb(128, 186, 200);
-  }
-  body header .barra2 .navbar .container-fluid .collapse .logoSerch {
-    margin-right: 30px;
-  }
-  body header .barra2 .navbar .container-fluid .nav-item .nav-link {
-    color: rgb(15, 129, 139);
-    margin: 1px;
-  }
-  body header .barra2 .navbar .container-fluid .nav-item .nav-link .dropdown-menu {
-    background-color: transparent;
-    border: transparent;
-  }
-  body .mainIndex {
-    /*seccion bienvenidos*/
-    /*seccion pedidos*/
-    /*seccion ofertas*/
-    /* Sección recetas */
-    /* Cards */
-  }
-  body .mainIndex .videobv {
-    max-height: 880px;
-    margin-bottom: -15px;
-    /*botones iniciosuscripcion*/
-  }
-  body .mainIndex .videobv .video {
-    width: 100vw;
-    height: 1020px;
-  }
-  body .mainIndex .videobv .welcome-text h1 {
-    font-family: "Belanosima" "sans-serif";
-    font-weight: 500;
-    font-style: normal;
-    font-size: 110px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-    font-family: "Belanosima", sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    animation-name: tituloAnimado;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-  }
-  @keyframes tituloAnimado {
-    0% {
-      font-size: 80px;
-      color: rgb(15, 129, 139);
-    }
-    25% {
-      font-size: 90px;
-      color: rgb(194, 148, 112);
-    }
-    50% {
-      font-size: 100px;
-      color: rgb(244, 214, 217);
-    }
-    75% {
-      font-size: 90px;
-      color: rgb(128, 186, 200);
-    }
-    100% {
-      font-size: 80px;
-      color: rgb(178, 217, 196);
-    }
-  }
-  body .mainIndex .videobv .welcome-text p {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: "Belanosima" "sans-serif";
-    font-weight: 500;
-    font-style: normal;
-    font-size: 110px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-    font-family: "Belanosima", sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    animation-name: tituloAnimado2;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-  }
-  @keyframes tituloAnimado2 {
-    0% {
-      font-size: 40px;
-      color: rgb(15, 129, 139);
-    }
-    25% {
-      font-size: 50px;
-      color: rgb(194, 148, 112);
-    }
-    50% {
-      font-size: 60px;
-      color: rgb(244, 214, 217);
-    }
-    75% {
-      font-size: 50px;
-      color: rgb(128, 186, 200);
-    }
-    100% {
-      font-size: 40px;
-      color: rgb(178, 217, 196);
-    }
-  }
-  body .mainIndex .videobv .inicioSuscripcion {
-    top: 75%;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    margin-left: 0rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-  body .mainIndex .videobv .inicioSuscripcion .boton {
-    margin: 10px;
-    margin-bottom: 0px;
-    font-family: "Belanosima" sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    text-align: center;
-    color: rgb(244, 242, 235);
-    font-family: "Belanosima", sans-serif;
-  }
-  body .mainIndex .pedidosBoxs {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: space-evenly;
-    height: 300px;
-    width: auto;
-    margin-left: 0px;
-    padding: 0;
-    margin-right: 0px;
-    border-radius: 0px;
-    background-color: rgb(128, 186, 200);
-    margin-bottom: -15px;
-  }
-  body .mainIndex .pedidosBoxs .aLaIzquierda {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  body .mainIndex .pedidosBoxs .aLaIzquierda .logoNaranja {
-    width: 100px;
-    height: 100px;
-  }
-  body .mainIndex .pedidosBoxs .aLaIzquierda .palabras {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-  body .mainIndex .pedidosBoxs .aLaIzquierda .palabras p {
-    font-family: "Belanosima" sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    text-align: center;
-    color: rgb(178, 217, 196);
-    font-family: "Belanosima", sans-serif;
-    margin: -7px;
-  }
-  body .mainIndex .pedidosBoxs .guiaDePedidos ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 30px;
-  }
-  body .mainIndex .pedidosBoxs .guiaDePedidos ul .logosPedidos {
-    width: 110px;
-    height: 110px;
-    margin-left: 7px;
-  }
-  body .mainIndex .pedidosBoxs .guiaDePedidos ul .logosPedidos2 {
-    width: 20px;
-    height: 30px;
-  }
-  body .mainIndex .pedidosBoxs .guiaDePedidos ul .logosPedidos2 #f2 {
-    display: none;
-  }
-  body .mainIndex .separadorDePagina {
-    height: 8rem;
-  }
-  body .mainIndex .ofertasBox {
-    height: auto;
-    margin-bottom: -15px;
-  }
-  body .mainIndex .ofertasBox h2 {
-    font-size: 55px;
-    padding: 10px;
-  }
-  body .mainIndex .ofertasBox p {
-    padding: 4px;
-    font-family: "Belanosima" sans-serif;
-    font-weight: 250;
-    font-style: normal;
-    font-size: 28px;
-    text-align: center;
-    color: rgb(244, 214, 217);
-    font-family: "Edu VIC WA NT Beginner", sans-serif;
-    width: 100%;
-  }
-  body .mainIndex .ofertasBox .ofertasDiv {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-  }
-  body .mainIndex .ofertasBox .ofertasDiv .ofertasImg {
-    width: 230px;
-    height: 230px;
-  }
-  body .mainIndex .recetasBox {
-    padding-bottom: 10px;
-    margin-bottom: -15px;
-  }
-  body .mainIndex .recetasBox h2 {
-    font-family: "Belanosima" sans-serif;
-    font-weight: 250;
-    font-style: normal;
-    font-size: 55px;
-    text-align: center;
-    color: rgb(244, 242, 235);
-    font-family: "Belanosima", sans-serif;
-    padding: 15px;
-  }
-  body .mainIndex .recetasBox p {
-    font-family: "Edu VIC WA NT Beginner";
-    font-weight: 500;
-    font-style: normal;
-    font-size: 28px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-  }
-  body .mainIndex .recetasBox .iframe {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 50px;
-  }
-  body .mainIndex .recetasBox .iframe .ratio {
-    justify-content: space-evenly;
-  }
-  body .mainIndex .recetasBox .iframe .ratio:hover {
-    margin: 5px;
-    transform: scale(1.2);
-    transition: transform 0.1s;
-    z-index: 1;
-  }
-  body .mainIndex .tarjetaVisita {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  body .mainIndex .tarjetaVisita .card {
-    margin-bottom: 40px;
-  }
-  body .mainIndex .tarjetaVisita h3 {
-    font-family: "Belanosima" sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 40px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-    font-family: "Belanosima", sans-serif;
-  }
-  body .mainIndex .tarjetaVisita p {
-    font-family: "Edu VIC WA NT Beginner";
-    font-weight: 500;
-    font-style: normal;
-    font-size: 25px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-    margin-bottom: 20px;
-  }
-  body footer {
-    height: auto;
-    padding: 15px;
-  }
-  body footer .flecha {
-    width: 70px;
-    height: 70px;
-  }
-  body footer .logoFooter {
-    display: none;
-  }
-  body footer .redesSociales .imgRedes {
-    margin: 7px;
-  }
-  /*fin Media query index*/
-  /* Media query pedidos 768 */
-  body .mainIndex .pedidos {
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 700px 440px 400px;
-    grid-template-areas: "tituloPedidos" "formularioPedidos" "iniciaSesion" "suscribite";
-    height: auto;
-    /* Formulario 'Pedidos' */
-    /* Sección 'Inicia sesión' */
-    /* Sección 'Suscribite' */
-  }
-  body .mainIndex .pedidos .formularioPedidos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    font-family: "Edu VIC WA NT Beginner";
-    font-weight: 500;
-    font-style: normal;
-    font-size: 24px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-  }
-  body .mainIndex .pedidos .formularioPedidos .formIzquierda {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0px;
-  }
-  body .mainIndex .pedidos .formularioPedidos .formDerecha {
-    margin: 0px;
-  }
-  body .mainIndex .pedidos .iniciaSesion {
-    margin-top: 0px;
-    margin-bottom: 40px;
-    margin-right: 40px;
-  }
-  body .mainIndex .pedidos .iniciaSesion .iSFormulario form {
-    font-family: "Edu VIC WA NT Beginner";
-    font-weight: 500;
-    font-style: normal;
-    font-size: 24px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-  }
-  body .mainIndex .pedidos .suscribite {
-    margin-top: 0px;
-    margin-left: 40px;
-    margin-bottom: 0px;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  body .mainIndex .pedidos .suscribite .sFormulario form {
-    font-family: "Edu VIC WA NT Beginner";
-    font-weight: 500;
-    font-style: normal;
-    font-size: 24px;
-    text-align: center;
-    color: rgb(15, 129, 139);
-  }
-}
-/*Fin Media query pedidos 768 */
 /* Media query 420 */
 @media screen and (max-width: 420px) {
   /*index*/
@@ -2110,11 +1438,13 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
     max-width: 100%;
     border-radius: 20px;
     margin: 20px;
+    padding-top: 40px;
+    padding-bottom: 25px;
   }
   body .mainIndex .pedidosBoxs .cinta {
     position: absolute;
-    left: 24rem;
-    top: -16rem;
+    left: 4rem;
+    top: -15rem;
   }
   body .mainIndex .pedidosBoxs .cinta img {
     width: 13rem;
@@ -2126,6 +1456,7 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
   }
   body .mainIndex .pedidosBoxs .aLaIzquierda .logoNaranja {
     width: 120px;
@@ -2289,6 +1620,7 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
     background-repeat: none;
     background-size: none;
     padding: 0px;
+    padding-bottom: 100px;
   }
   body .mainIndex .tarjetaVisita img {
     width: 15rem;

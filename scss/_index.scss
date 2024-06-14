@@ -39,7 +39,7 @@ body {
                     .collapse{
                         .logoSerch {
                           margin-right: 40px;
-                          width: 30px;
+                          width: 32px;
                           height: auto;
                           &:hover {
                               transform: scale(1.2);
@@ -278,13 +278,13 @@ body {
            height: 550px;
            background-color: rgba(194, 148, 112,0.4);
            margin-bottom: -25px;
-           h2 {
+           h2{
                @include text ("Belanosima" sans-serif , 500, normal, 55px, center, $blancoamarillo );
                font-family: "Belanosima", sans-serif;
                padding: 8px;
                background-color: $celesteverdozo;
            }
-           p {
+           p{
                padding: 7px;
                @include text ("Edu VIC WA NT Beginner" , 500, normal, 38px, center, $azulosc );
                max-width: 100%;
@@ -339,7 +339,7 @@ body {
         /* Cards */
         .tarjetaVisita {
             @include dFlex (flex, row, nowrap, center, center);
-            height: 1000px;
+            height: 62.5rem;
             background-image: url(../images/generales/hoja2.png);
             background-repeat: no-repeat;
             background-size: cover;
@@ -348,7 +348,7 @@ body {
             }
             #card1{
                 transform: rotate(1deg) translateY(30px);
-                margin-left: 120px;
+                margin-left: 7.5rem;
             }
             #card2{
                 transition: box-shadow .25s cubic-bezier(.4,0,.2,1) 0ms;
@@ -360,13 +360,13 @@ body {
                 background-color: $naranjaosc;
                 width: 15rem;
                 height: 25rem;
-                margin: 20px;
-                margin-top: -220px;
+                margin: 1.25rem;
+                margin-top: -13.75rem;
                 box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.7);
                 .btn-custom {
                     background-color:$naranjacla
                     ;
-                    @include text ("Belanosima" sans-serif, 300, normal, 20px, center, $naranjaosc );
+                    @include text ("Belanosima" sans-serif, 300, normal, 1.25rem, center, $naranjaosc );
                     font-family: "Belanosima", sans-serif;
                     &:hover {
                         transform: scale(1.1);
@@ -375,11 +375,11 @@ body {
                 }
             }
             h3{
-                @include text ("Belanosima" sans-serif , 300, normal, 28px, center, $blancoamarillo);
+                @include text ("Belanosima" sans-serif , 300, normal, 1.75rem, center, $blancoamarillo);
                 font-family: "Belanosima", sans-serif;
             }
             p{
-                @include text ("Edu VIC WA NT Beginner", 300, normal, 20px, center, $blancoamarillo );
+                @include text ("Edu VIC WA NT Beginner", 300, normal, 1.25rem, center, $blancoamarillo );
 
             }
         }

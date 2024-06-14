@@ -110,9 +110,9 @@ main{
         .listaImagenes{
             list-style: none;
             @include dFlex (flex, row, wrap, center, center);
-            margin-left: 420px;
-            margin-right: 190px;
-            margin-top: -220px;
+            margin-left: 26.25rem;
+            margin-right: 11.875rem;
+            margin-top: -13.75rem;
             li{
                 text-align: center;
                 a{
