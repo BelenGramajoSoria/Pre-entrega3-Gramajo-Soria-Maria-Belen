@@ -1,29 +1,31 @@
 .bodyEncontranos {
     .mainIndex {
-        background-image: url(../images/generales/fondo5.jpg);
+        background-image: url(../images/generales/fondo_page-0001.jpg);
         background-size: contain;
         background-attachment: fixed;
-        width: 100vw;
+        max-width: 100%;
+        padding-bottom: 4rem;
         height: fit-content;
         .encontranos {
             display: grid;
             grid-template-columns: 1fr 1fr 1.3fr;
-            grid-template-rows: 200px 1fr 1fr;
-            gap: 10px;
+            grid-template-rows: 12.5rem 1fr 1fr;
+            gap: 0.7rem;
             grid-template-areas:
                 "tituloEncontrarnos tituloEncontrarnos tituloEncontrarnos"
                 "mapa mapa verticalFranja"
                 "trabaja horarios verticalFranja";
-            width: 100vw;
-            height: 920px;
-            padding-bottom: 8px;
+            max-width: 100%;
+            height: 57.5rem;
+           
+
             /*Título Encontranos*/
             .tituloEncontrarnos {
                 grid-area: tituloEncontrarnos;
                 background-color: $naranjamed;
                 @include dFlex (flex, column, nowrap, center, center);
                 h2 {
-                    @include text ("Belanosima" sans-serif , 500, normal, 50px, center, $azulosc );
+                    @include text ("Belanosima" sans-serif , 500, normal, 3.2rem, center, $blancoamarillo );
                     font-family: "Belanosima", sans-serif;
                 }
                 p {
@@ -34,26 +36,35 @@
             .verticalFranja {
                 grid-area: verticalFranja;
                 background-color: $azulosc;
+                box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.7);
                 @include dFlex (flex, column, nowrap, center, center);
-                margin-right:  50px;
-                margin-left:  50px;
+                margin :  4.2rem;
+                transform: rotate(-2deg) translateY(0.75rem);
+                .cinta{
+                    position: absolute;
+                    top: -4.37rem;
+                    z-index: 100;
+                    img{
+                        width: 16.87rem;
+                        height: auto;
+                    }
+                }
                 p {
-                    @include text ("Edu VIC WA NT Beginner", 500, normal, 30px, center, $celesteclaro );
-                    padding: 25px;
-                    text-align: center;
+                    @include text ("Edu VIC WA NT Beginner", 300, normal, 1.56rem, center, $blancoamarillo );
+                    padding: 1rem;
                 }
                 .redesSociales2{
                     li {
                         @include dFlex (flex, row, nowrap, baseline, center);
-                        margin-left: 80px;
-                        padding-top: 30px;
+                        margin-left: 3.125rem;
+                        padding-top: 1.25rem;
                     }
                     a {
-                        @include text ("Edu VIC WA NT Beginner", 300, normal, 20px, center, $celesteclaro );
+                        @include text ("Edu VIC WA NT Beginner", 300, normal, 1.25rem, center, $blancoamarillo );
                         .imgRedes2 {
-                            width: 60px;
-                            height: 60px;
-                            margin: 10px;
+                            width: 3.75rem;
+                            height: 3.75rem;
+                            margin: 0.3rem;
                             &:hover {
                                 transform: scale(1.2);
                                 transition: transform 0.3s;
@@ -65,36 +76,47 @@
             /* Mapa */
             .mapa {
                 grid-area: mapa;
-                padding-left: 50px;
+                padding-left: 3.12rem;
+                margin-top: 1.25rem;
+                margin-bottom: 1rem;
                 @include dFlex (flex, row, nowrap, center, center);
             }
             /* Horarios */
             .horarios {
                 grid-area: horarios;
-                background-color: $celesteverdozo;
+                background-image: url(../images/generales/papel.png);
+                background-repeat: no-repeat;
+                background-size: cover;
                 @include dFlex (flex, column, nowrap, center, center);
+                margin-left: 2rem;
                 h2 {
-                    @include text ("Belanosima" sans-serif , 500, normal, 40px, center, $azulosc );
+                    @include text ("Belanosima" sans-serif , 500, normal, 2.5rem, center, $celesteclaro);
                     font-family: "Belanosima", sans-serif;
+                    margin-top: 1rem;
                 }
                 p {
-                    @include text ("Edu VIC WA NT Beginner", 500, normal, 30px, center, $celesteclaro );
+                    @include text ("Edu VIC WA NT Beginner", 300, normal, 1.8rem, center, $blancoamarillo);
+                    margin: 0;
                 }
             }
             /* Trabaja con nosotros */
             .trabaja {
                 grid-area: trabaja;
-                background-color: $celesteclaro;
+                background-image: url(../images/generales/papel2.png);
+                background-repeat: no-repeat;
+                background-size: cover;
                 @include dFlex (flex, column, nowrap, center, center);
-                margin-left: 50px;
+                margin-left: 3.12rem;
                 h2 {
-                    @include text ("Belanosima" sans-serif , 300, normal, 40px, center, $azulosc );
+                    @include text ("Belanosima" sans-serif , 300, normal, 2.5rem, center, $naranjacla );
                     font-family: "Belanosima", sans-serif;
+                    margin-top: 1.8rem;
                 } 
                 input, form {
                    align-self: center;
-                   @include text ("Belanosima" sans-serif , 400, normal, 15px, center, $azulosc );
+                   @include text ("Belanosima" sans-serif , 400, normal, 0.93rem, center, $azulosc );
                     font-family: "Belanosima", sans-serif;
+                    margin-top: -1rem;
                 }
             }
         }

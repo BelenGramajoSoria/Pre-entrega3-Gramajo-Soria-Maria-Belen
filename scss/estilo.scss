@@ -1,13 +1,14 @@
 
 /* Variables */
 
-$celesteverdozo: #07838d;
-$celesteclaro:#85eaf1;
-$blancoamarillo:#f8f5e5;
-$naranjaosc:rgba(255, 72, 0, 0.9);
-$naranjamed: #ff5e01;
-$naranjacla:#ffa228;
-$azulosc:#062c45;
+$celesteverdozo:rgba(194, 148, 112,);
+$celesteclaro:rgba(244, 214, 217);
+$blancoamarillo:rgba(244, 242, 235);
+$naranjaosc:rgba(68, 145, 111);
+$naranjamed:rgba(128, 186, 200);
+$naranjacla:rgba(178, 217, 196);
+$azulosc:rgba(15, 129, 139);
+
 
 @mixin text ($font-family, $font-weight, $font-style, $font-size, $text-align, $color){
     font-family: $font-family;

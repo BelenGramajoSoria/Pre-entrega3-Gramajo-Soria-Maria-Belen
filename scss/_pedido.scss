@@ -1,27 +1,29 @@
 /* Estilos para la página 'Pedidos' */
 body{
+    max-width: 100%;
     .mainIndex{
+        max-width: 100%;
         .pedidos {
             display: grid; 
             grid-auto-columns: 1fr; 
             grid-auto-rows: 1fr; 
-            grid-template-columns: 0.8fr 1.2fr; 
-            grid-template-rows: 200px 420px 400px; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 200px 520px 400px; 
             gap: 0px 0px; 
             grid-template-areas: 
               "tituloPedidos tituloPedidos"
               "formularioPedidos formularioPedidos"
               "iniciaSesion suscribite"; 
-            width: 100vw; 
+            max-width: 100%; 
             height: auto;
             padding-bottom: 40px;
             .tituloPedidos {
                 grid-area: tituloPedidos;
+                max-width: 100%;
                 background-color:$naranjamed;
                 @include dFlex (flex, column, nowrap, center, center);
                 h2 {
-                    @include text ("Belanosima" sans-serif , 500, normal, 50px, center, $azulosc );
-                    align-self: center;
+                    @include text ("Belanosima" sans-serif , 500, normal, 50px, center, $blancoamarillo );
                     font-family: "Belanosima", sans-serif;
                 }
             }
@@ -29,33 +31,56 @@ body{
             .formularioPedidos {
                 grid-area: formularioPedidos;
                 background-color: $naranjacla;
-                @include dFlex (flex, row, nowrap, space-around, center);
-                @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $azulosc );
-                border-radius: 20px;
-                margin: 40px;
-                .formIzquierda{
-                    @include dFlex (flex, column, nowrap, space-around, center);
-                    margin: 20px;
+                @include dFlex (flex, column, nowrap, center, center);
+                @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $naranjaosc );
+                transform: rotate(1deg) translateY(30px);
+                border-radius: 10px;
+                margin: 60px;
+                max-width: 100%;
+                .cinta{
+                    position: absolute;
+                    top: -5.4rem;
+                    z-index: 100;
+                    img{
+                        width: 16.87rem;
+                        height: auto;
+                    }
                 }
-                .formDerecha{
-                    @include dFlex (flex, column, nowrap, space-around, center);
-                    margin: 20px;
-                    button{
-                        @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $blancoamarillo );
-                        background-color: $azulosc;
-                        border: 0;
-                        padding: 5px;
-                        border-radius: 5px;
-                        &:hover {
-                            transform: scale(1.1);
+                h2{
+                    @include text ("Belanosima" sans-serif , 500, normal, 40px, center, $naranjaosc );
+                    font-family: "Belanosima", sans-serif;
+                    padding-top: 20px;
+                }
+                .formularios{
+                    max-width: 100%;
+                    @include dFlex (flex, row, nowrap, space-around, space-evenly);
+                    .formIzquierda{
+                        @include dFlex (flex, column, nowrap, space-between, center);
+                        margin: 20px;
+                    }
+                    .formDerecha{
+                        @include dFlex (flex, column, nowrap, space-around, center);
+                        margin: 20px;
+                        button{
+                            @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $blancoamarillo );
+                            background-color: $naranjaosc;
+                            border: 0;
+                            padding: 5px;
+                            border-radius: 5px;
+                            &:hover {
+                                transform: scale(1.1);
+                            }
                         }
                     }
                 }
             }
             /* Sección 'Inicia sesión' */
             .iniciaSesion{
+                max-width: 100%;
                 grid-area: iniciaSesion;
-                background-color: $celesteverdozo;
+                background-image: url(../images/generales/papel2.png);
+                background-repeat: no-repeat;
+                background-size: cover;
                 @include dFlex (flex, column, nowrap, center, center);
                 border-radius: 20px;
                 margin-top: 10px;
@@ -65,9 +90,11 @@ body{
                 h2 {
                     @include text ("Belanosima" sans-serif , 500, normal, 40px, center, $azulosc );
                     font-family: "Belanosima", sans-serif;
+                    padding-top: 10px;
                 }
                 .iSFormulario{
                     @include dFlex (flex, column, nowrap, center, center);
+                    padding-bottom: 10px;
                     form{
                         @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $azulosc )
                     }
@@ -83,9 +110,12 @@ body{
             }
             /* Sección 'Suscribite' */
             .suscribite{
+                max-width: 100%;
                 grid-area: suscribite;
-                background-color: $celesteverdozo;
-                @include dFlex (flex, column, nowrap, space-around,center);
+                background-image: url(../images/generales/papel.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                @include dFlex (flex, column, nowrap, center,center);
                 border-radius: 20px;
                 margin-top: 10px;
                 margin-left: 20px;
@@ -94,14 +124,16 @@ body{
                 padding-left: 120px;
                 padding-right: 120px;
                 h2 {
-                    @include text ("Belanosima" sans-serif , 500, normal, 40px, center, $azulosc );
+                    @include text ("Belanosima" sans-serif , 500, normal, 40px, center, $celesteclaro);
                     font-family: "Belanosima", sans-serif;
+                    padding-top: 10px;
                 }
                 .sFormulario{
-                    @include dFlex (flex, column, nowrap, space-around, center);
+                    @include dFlex (flex, column, nowrap, center, center);
+                    padding-top: -10px;
                     form{ 
                         @include dFlex (flex, row, wrap, space-around, center);
-                        @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $azulosc )
+                        @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $celesteclaro )
                     }
                     button{
                         @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $blancoamarillo );

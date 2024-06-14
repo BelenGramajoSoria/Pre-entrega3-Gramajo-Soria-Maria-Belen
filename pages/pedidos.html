@@ -82,40 +82,46 @@
               </div>
               <!--formulario pedidos -->
               <div data-aos="fade-left" class="formularioPedidos">
-                 <form class="formIzquierda" >
-                      <div>
-                          <label for="name"> *Nombre:</label>
-                          <input type="text" name="name" placeholder="Alvarito" required >
-                       </div>
-                       <div>
-                          <label for="surname"> *Apellido:</label>
-                          <input type="text" name="surname" placeholder="Campo" required>
-                      </div>
-                       <div>
-                          <label for="email"> *E-mail:</label>
-                          <input type="email" name="email" placeholder="Escribe tu email aqui" required>
-                      </div>
-                       <div>
-                          <label for="phone"> N° Celular:</label> 
-                          <input  type="tel" name="phone" placeholder="Escribe tu numero de celular">
-                      </div>
-                      <div>
-                          <label for="address"> Direccion:</label>
-                          <input type="text" name="address" placeholder="Escribe tu direccion">
-                      </div>
-                      <div>
-                          <label for="envio o retiro"></label>
-                          <input type="checkbox" name="envio o retiro" value="retiro"> Retiro del local
-                          <input type="checkbox" name="envio o retiro" value="retiro"> Envio a casa
-                      </div>
-                 </form>
-                 <form class="formDerecha">
-                       <div>
-                          <p>Escribe tu pedido</p>
-                          <textarea name="comentario" cols="30" rows="6" ></textarea>
-                      </div>
-                      <button type="submit" class="botonEnviar">Enviar Pedido</button>
-                 </form>
+                 <div class="cinta">
+                      <img src="../images/generales/cinta.png" alt="cintaPegada">
+                 </div>
+                 <h2>PEDI LO QUE QUIERAS</h2>
+                 <div class="formularios">
+                    <form class="formIzquierda" >
+                        <div>
+                            <label for="name"> *Nombre:</label>
+                            <input type="text" name="name" placeholder="Alvarito" required >
+                         </div>
+                         <div>
+                            <label for="surname"> *Apellido:</label>
+                            <input type="text" name="surname" placeholder="Campo" required>
+                        </div>
+                         <div>
+                            <label for="email"> *E-mail:</label>
+                            <input type="email" name="email" placeholder="Escribe tu email aqui" required>
+                        </div>
+                         <div>
+                            <label for="phone"> N° Celular:</label> 
+                            <input  type="tel" name="phone" placeholder="Escribe tu numero de celular">
+                        </div>
+                        <div>
+                            <label for="address"> Direccion:</label>
+                            <input type="text" name="address" placeholder="Escribe tu direccion">
+                        </div>
+                        <div>
+                            <label for="envio o retiro"></label>
+                            <input type="checkbox" name="envio o retiro" value="retiro"> Retiro del local
+                            <input type="checkbox" name="envio o retiro" value="retiro"> Envio a casa
+                        </div>
+                   </form>
+                   <form class="formDerecha">
+                         <div>
+                            <p>Escribe tu pedido</p>
+                            <textarea name="comentario" cols="30" rows="6" ></textarea>
+                        </div>
+                        <button type="submit" class="botonEnviar">Enviar Pedido</button>
+                   </form>
+                 </div>
               </div>
               <!--inicio de sesion -->
               <div data-aos="fade-right" class="iniciaSesion">
@@ -126,7 +132,6 @@
                            <div class="mb-3">
                                <label for="exampleInputEmail1"   class="form-label">E-mail:</label>
                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email">
-                               <div id="emailHelp" class="form-text">Nosotros nunca compartiremos tu email.</div>
                           </div>
                            <div class="mb-3">
                               <label for="exampleInputPassword1" class="form-label">Contraseña:</label>

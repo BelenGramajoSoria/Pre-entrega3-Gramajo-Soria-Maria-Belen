@@ -2,16 +2,15 @@
 /*body box*/
 body {
     background-color: $blancoamarillo;
-    width: 100vw;
+    max-width: 100%;
     height: fit-content;
 
     header{
         .barraSuperior{
-            background-color: $celesteverdozo;
+            background-color: $naranjaosc;
+            @include dFlex (flex, row, nowrap, center,center);
             height: 80px;
-            display: flex;
-            justify-content: center;
-            width: 100vw;
+            max-width: 100%;
             .imgLog{
                 z-index: 100;
              .logo1 {
@@ -23,11 +22,10 @@ body {
         }
         .barra2{
             .navbar {
-
                 height: 45px;
                 z-index: 1;
-                background-color: $azulosc;
-                @include text ("Belanosima" "sans-serif", 500, normal, 25px, center, $celesteclaro );
+                background-color: $naranjacla;
+                @include text ("Belanosima" "sans-serif", 500, normal, 25px, center, $azulosc);
                 font-family: "Belanosima", sans-serif;
                 padding-left: 40px;
                 
@@ -51,7 +49,7 @@ body {
                     }
                     .nav-item{
                         .nav-link{
-                            color:$celesteclaro;
+                            color:$azulosc;
                             margin: 5px;
                             &:hover {
                                 color: $naranjamed;
@@ -67,24 +65,23 @@ body {
         }
     } 
     .mainIndex{
-        background-image: url(../images/generales/fondo5.jpg);
-        background-size: contain;
+        background-image: url(../images/generales/fondo_page-0001.jpg);
+        background-size:100vw;
         background-attachment: fixed;
-        width: 100vw;
+        max-width: 100%;
         height: fit-content;
         
         /*seccion bienvenidos*/
         .videobv {
-            max-width: 100vw;
-            width: 100vw;
+            max-width: auto;
+            max-height: 1200px;
             overflow: hidden;
             position: relative;
             margin-bottom: -25px;
 
             .video {
-                width: 100vw;
-                height: 100%;
-                object-fit: cover;
+                max-width: 100%;
+                object-fit: contain;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -101,63 +98,61 @@ body {
                 h1 {
                     @include text ("Belanosima" "sans-serif" , 500, normal, 180px, center, $azulosc );
                     font-family: "Belanosima", sans-serif;
-                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
                     animation-name: tituloAnimado; 
                     animation-iteration-count: infinite;
-                    animation-duration: 3s;
+                    animation-duration: 3.5s;
                 }
                 @keyframes tituloAnimado{
                     0%{
-                        font-size: 180px;
-                        color: $azulosc;
+                        font-size: 185px;
+                        color: #065d64;
                     }
                     25%{
-                        font-size: 190px;
+                        font-size: 195px;
                         color: $celesteverdozo;
                     }
                     50%{
                         font-size: 200px;
-                        color: $celesteclaro;
+                        color: #77cdd3;
                     }
                     75%{
-                        font-size: 190px;
-                        color: $naranjamed;
+                        font-size: 195px;
+                        color: $celesteverdozo;
                     }
                     100%{
-                        font-size: 180px;
-                        color: $naranjacla;
+                        font-size: 185px;
+                        color: #065d64;
                     }
                 }
-                p {
+                p{
                     padding-left: 20px;
                     padding-right: 20px;
                     @include text ("Belanosima" "sans-serif" , 500, normal, 110px, center, $azulosc );
                     font-family: "Belanosima", sans-serif;
-                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
                     animation-name: tituloAnimado2; 
                     animation-iteration-count: infinite;
-                    animation-duration: 3s;
+                    animation-duration: 3.5s;
                 }
                 @keyframes tituloAnimado2{
                     0%{
-                        font-size: 110px;
-                        color: $azulosc;
+                        font-size: 115px;
+                        color: #065d64;
                     }
                     25%{
-                        font-size: 120px;
+                        font-size: 125px;
                         color: $celesteverdozo;
                     }
                     50%{
                         font-size: 130px;
-                        color: $celesteclaro;
+                        color: #77cdd3;
                     }
                     75%{
-                        font-size: 120px;
+                        font-size: 125px;
                         color: $celesteverdozo;
                     }
                     100%{
-                        font-size: 110px;
-                        color: $azulosc;
+                        font-size: 115px;
+                        color: #065d64;
                     }
                 }
             }
@@ -168,7 +163,7 @@ body {
                left: 70vw;
                z-index: 100;
                transform: translate(-50%, -50%);
-               margin-left: 20rem;
+               margin-left: 15rem;
                @include dFlex (flex, column, nowrap, center, center);
 
               .boton{
@@ -191,20 +186,35 @@ body {
             height: 350px;
             width: auto;
             background-color: $naranjamed;
-            margin-bottom: -25px;
+            border-radius: 20px;
+            margin: 30px;
+            box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.7);
+            .cinta{
+                position: absolute;
+                left:5rem ;
+                top: -9.37rem;
+                z-index: 100;
+                img{
+                    width: 16.87rem;
+                    height: auto;
+                }
+            }
 
             .aLaIzquierda {
                 @include dFlex (flex, row, nowrap, space-between, center);
                 .logoNaranja {
-                    width: 220px;
-                    height: 220px;
+                    width: 180px;
+                    height: 180px;
                 }
                 .palabras {
                     @include dFlex (flex, column, nowrap, center, center);
-                    margin-left: 40px;
+                    margin-left: 45px;
+                    .palabra1{ @include text     ("Belanosima" sans-serif , 250, normal, 3rem, center, $blancoamarillo);
+                      font-family: "Belanosima", sans-serif;
+                    }   
                     p {
-                        @include text ("Belanosima" sans-serif , 500, normal, 50px, center, $naranjacla );
-                        font-family: "Belanosima", sans-serif;
+                        @include text ("Edu VIC WA NT Beginner", 300, normal, 1.8rem, center, $blancoamarillo );
+                        padding: 0.1rem;
                         margin: -8px;
                     }       
                 }
@@ -213,10 +223,34 @@ body {
                 ul{
                     list-style-type: none;
                     @include dFlex (flex, row, nowrap, space-between, center);
+                    #f1{
+                        transform: rotate(1deg) translateY(30px);
+                        &:hover {
+                            transform: scale(1.2);
+                          }
+                       }
+                      #f2{
+                        transition: box-shadow .25s cubic-bezier(.4,0,.2,1) 0ms;
+                        &:hover {
+                             transform: scale(1.2);
+                           }
+                       }
+                       #f3{
+                        transform: rotate(-2deg) translateY(12px);
+                        &:hover {
+                             transform: scale(1.2);
+                           }
+                       }
+                      #f4{
+                         transform: rotate(1deg) translateY(30px);
+                          &:hover {
+                             transform: scale(1.2);
+                          }
+                       }
 
                     .logosPedidos {
-                        width: 190px;
-                        height: 190px;
+                        width: 180px;
+                        height: 180px;
                         margin-left: 15px;
                         &:hover {
                            transform: scale(1.2);
@@ -231,33 +265,29 @@ body {
             }
         } 
         .separadorDePagina{
-            background-image: url(../images/generales/texture-1099399_640.jpg);
+            background-image: url(../images/generales/fondo_page-0001.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
-            height: 15rem;
+            height: 13rem;
         }
         
         /*seccion ofertas*/
        .ofertasBox {
-            width: 100%;
+           max-width: 100%;
            height: 550px;
-           background-color: $azulosc;
+           background-color: rgba(194, 148, 112,0.4);
            margin-bottom: -25px;
            h2 {
+               @include text ("Belanosima" sans-serif , 500, normal, 55px, center, $blancoamarillo );
                font-family: "Belanosima", sans-serif;
-               
-               color: #9dd1d4;
-               font-size: 55px;
-               text-align: center;
-               padding: 20px;
-               background-color: #083e62;
+               padding: 8px;
+               background-color: $celesteverdozo;
            }
            p {
                padding: 7px;
-               @include text ("Belanosima" sans-serif , 250, normal, 30px, center, $celesteclaro );
-               font-family: "Edu VIC WA NT Beginner", sans-serif;
-               width: 100%;
+               @include text ("Edu VIC WA NT Beginner" , 500, normal, 38px, center, $azulosc );
+               max-width: 100%;
             }
             .ofertasDiv {
                 @include dFlex (flex, row, nowrap, center, center);
@@ -277,27 +307,29 @@ body {
       /* Sección recetas */
        .recetasBox {
             height: auto;
-            width: 100%;
-            padding-bottom: 80px;
-            margin-bottom: -25px;
+            max-width: 100%;
+            padding-bottom: 40px;
+            margin-bottom: 50px;
+            background-color: rgba(15, 129, 139,0.5);
            h2 {
                 @include text ("Belanosima" sans-serif , 250, normal, 55px, center, $blancoamarillo);
                 font-family: "Belanosima", sans-serif;
-                background-color:#07838d;
-                padding: 20px;
+                background-color:$azulosc;
+                padding: 8px;
             }
             p {
-                @include text ("Edu VIC WA NT Beginner", 500, normal, 35px, center, $azulosc );
+                @include text ("Edu VIC WA NT Beginner", 500, normal, 35px, center, $blancoamarillo );
                 margin-bottom: 20px;
             }
            .iframe {
                 @include dFlex (flex, row, nowrap, space-evenly, center);
-                margin-top: 50px;
+                margin: 30px;
+                margin-top:20px;
                 .ratio{
                    justify-content: space-evenly;
+                   margin: 10px;
                    &:hover {
-                       margin: 5px;
-                       transform: scale(1.2);
+                       transform: scale(1.1);
                        transition: transform 0.1s;
                        z-index: 1;
                     }
@@ -306,30 +338,49 @@ body {
         }
         /* Cards */
         .tarjetaVisita {
-            @include dFlex (flex, row, nowrap, space-evenly, center);
-            padding: 80px;
-            background-color: $celesteverdozo;
-            .card{
-                background-color: $blancoamarillo;
-                width: 25rem;
+            @include dFlex (flex, row, nowrap, center, center);
+            height: 1000px;
+            background-image: url(../images/generales/hoja2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            img{
+                width: 15rem;
+            }
+            #card1{
+                transform: rotate(1deg) translateY(30px);
+                margin-left: 120px;
+            }
+            #card2{
+                transition: box-shadow .25s cubic-bezier(.4,0,.2,1) 0ms;
+            }
+            #card3{
+                transform: rotate(-2deg) translateY(12px);
+            }
+            .card{   
+                background-color: $naranjaosc;
+                width: 15rem;
+                height: 25rem;
+                margin: 20px;
+                margin-top: -220px;
+                box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.7);
                 .btn-custom {
-                    background-color:$naranjamed;
-                    @include text ("Edu VIC WA NT Beginner", 300, normal, 20px, center, $blancoamarillo );
+                    background-color:$naranjacla
+                    ;
+                    @include text ("Belanosima" sans-serif, 300, normal, 20px, center, $naranjaosc );
+                    font-family: "Belanosima", sans-serif;
                     &:hover {
-                        transform: scale(1.2);
+                        transform: scale(1.1);
                         transition: transform 0.3s;
-                        
                     }
                 }
-                
             }
             h3{
-                @include text ("Belanosima" sans-serif , 300, normal, 40px, center, $azulosc );
+                @include text ("Belanosima" sans-serif , 300, normal, 28px, center, $blancoamarillo);
                 font-family: "Belanosima", sans-serif;
             }
             p{
-                @include text ("Edu VIC WA NT Beginner", 500, normal, 25px, center, $azulosc );
-                margin-bottom: 20px;
+                @include text ("Edu VIC WA NT Beginner", 300, normal, 20px, center, $blancoamarillo );
+
             }
         }
     }

@@ -4,8 +4,8 @@ body{
     .mainIndex{
         .sobreNosotros {
             display: grid;
-            grid-template-columns: 1fr 420px;
-            grid-template-rows: 200px 0.4fr 1fr;
+            grid-template-columns: 1fr 28rem;
+            grid-template-rows: 12.5rem 0.4fr 1fr;
             gap: 0px;
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
@@ -14,77 +14,77 @@ body{
               "tituloSN tituloSN"
               "texto1 franjaV"
               "texto2 franjaV";
-            width: 100vw;
+            max-width: 100%;
             height: auto;
 
             /* Título 'Sobre nosotros' */
             .tituloSN { 
                 grid-area: tituloSN; 
-                width: 100%;
-                display: flex;
-                background-color: #f97400;
-                justify-content: center;
-                align-items: center;
+                max-width: 100%;
+                @include dFlex (flex, row, nowrap, center, center);
+                background-color:$naranjamed;
                 h2 {
+                    @include text ("Belanosima" sans-serif , 500, normal, 3.2rem, center, $blancoamarillo );
                     font-family: "Belanosima", sans-serif;
-                    font-weight: 500;
-                    font-style: normal;
-                    color: #062c45;
-                    font-size: 50px;
-                    text-align: center;
-                }
-                
+                } 
             }
             /* Franja vertical */
             .franjaV { 
                 grid-area: franjaV; 
-                background-color: #1fa2ac;
-                display: flex;
-                flex-direction: column;
-                margin-right: 50px;
-                padding: 20px;
-                justify-content: space-evenly;
+                background-color: $celesteverdozo;
+                @include dFlex (flex, column, nowrap, space-evenly, center);
+                margin-right: 3.125rem;
+                padding: 1.25rem;
+                box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.7);
+                .chinche1{
+                    position: absolute;
+                    z-index: 100;
+                    bottom: 104rem;
+                    left: 16rem;
+                    width: 130px;
+                    height: 130px;
+                }
+                .chinche2{
+                    position: absolute;
+                    z-index: 100;
+                    bottom: 68rem;
+                    left: 16rem;
+                    width: 130px;
+                    height: 130px;
+                }
+                .chinche3{
+                    position: absolute;
+                    z-index: 100;
+                    bottom: 31rem;
+                    left: 16rem;
+                    width: 130px;
+                    height: 130px;
+                }
             }
             /* Texto introductorio */
             .texto1 { 
                 grid-area: texto1;
                 margin: 80px;
                 p {
-                    font-family: "Edu VIC WA NT Beginner";
-                    font-weight: 200;
-                    font-style: normal;
-                    color: #062c45;
-                    font-size: 22px;
+                    @include text ("Edu VIC WA NT Beginner", 400, normal, 22px, center, $azulosc );
                     line-height: 1.5;
                 }
-                
             }
             .texto2{
                 .valoresTitulo {
+                    @include text ("Belanosima" sans-serif , 400, normal, 40px, center, $blancoamarillo);
                     font-family: "Belanosima", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    font-size: 40px;
-                    text-align: center;
-                    color:antiquewhite;
-                    background-color:#062c45;
+                    background-color:$azulosc;
                     padding: 30px;
                 }
                 .textoLimitado {
-                    font-family: "Edu VIC WA NT Beginner";
-                    font-weight: 200;
-                    font-style: normal;
-                    color: #062c45;
-                    font-size: 22px;
+                    @include text ("Edu VIC WA NT Beginner", 200, normal, 22px, center, $azulosc);
                     line-height: 1.5;
                     list-style-type: none;
                     margin: 80px;
                     .str{
-                       font-family: "Belanosima", sans-serif;;
-                       font-weight: 200;
-                       font-style: normal;
-                       color: #062c45;
-                       font-size: 26px;
+                        @include text ("Belanosima" sans-serif , 200, normal, 26px, center, $blancoamarillo);
+                       font-family: "Belanosima", sans-serif;
                     }
                 }
             }

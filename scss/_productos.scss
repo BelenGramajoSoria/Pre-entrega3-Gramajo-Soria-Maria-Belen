@@ -4,7 +4,7 @@ main{
         .tituloProductos{  
             display: grid;
             grid-template-columns: 0.8fr 1.4fr 0.8fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1.2fr 1fr;
             grid-auto-columns: 1fr;
             grid-auto-rows: 1fr;
             gap: 0px 0px;
@@ -12,26 +12,27 @@ main{
             grid-template-areas:
                 "vacio tituloProd boton"
                 "pedidoBox pedidoBox pedidoBox";
-            width: 100vw;
+            max-width: 100%;
             height: auto;
-            background-color:$naranjaosc;
-            .vacio { 
-                grid-area: vacio; 
+            background-color:$naranjamed;
+            padding-bottom: 40px;
+           .vacio { 
+              grid-area: vacio; 
             }
-            .tituloProd { 
+           .tituloProd{ 
                 grid-area: tituloProd; 
                 @include dFlex (flex, row, nowrap, center, center);
                 h2 { 
-                    @include text ("Belanosima" sans-serif , 400, normal, 55px, center, $azulosc);
-                    font-family: "Belanosima", sans-serif;
+                 @include text ("Belanosima" sans-serif , 400, normal, 55px, center, $blancoamarillo);
+                 font-family: "Belanosima", sans-serif;
                 }
             }
-            .inSus {
+           .inSus{
                 grid-area: boton; 
                 @include dFlex (flex, column, nowrap, center, center);
                 padding-right: 120px;
                 padding-left: 120px;
-                .botonIs{
+               .botonIs{
                     text-decoration: none;
                     background-color: $azulosc;
                     border-radius: 10px;
@@ -39,24 +40,45 @@ main{
                     font-family: "Belanosima", sans-serif;
                     padding: 10px;
                     margin-bottom: 10px;
-                    &:hover {
-                        background-color: $naranjamed;
-                    }
+                  &:hover{
+                        background-color: $naranjacla;
+                   }
                 }
             }
-            .pedidoBox {
-                grid-area: pedidoBox;
-                .guiaDePedidos2{ 
-                    ul{
-                        list-style-type: none;
-                        @include dFlex (flex, row, nowrap, center, baseline);
-                        .logosPedidos {
+          .pedidoBox {
+               grid-area: pedidoBox;
+               .guiaDePedidos2{ 
+                   ul{
+                      list-style-type: none;
+                      @include dFlex (flex, row, nowrap, center, baseline);
+                      #f1{
+                         transform: rotate(1deg) translateY(30px);
+                         &:hover {
+                             transform: scale(1.2);
+                           }
+                        }
+                       #f2{
+                         transition: box-shadow .25s cubic-bezier(.4,0,.2,1) 0ms;
+                         &:hover {
+                              transform: scale(1.2);
+                            }
+                        }
+                        #f3{
+                         transform: rotate(-2deg) translateY(12px);
+                         &:hover {
+                              transform: scale(1.2);
+                            }
+                        }
+                       #f4{
+                          transform: rotate(1deg) translateY(30px);
+                           &:hover {
+                              transform: scale(1.2);
+                           }
+                        }
+                       .logosPedidos{
                             width: 170px;
                             height: 170px;
                             margin-left: 15px;
-                            &:hover {
-                               transform: scale(1.2);
-                            }
                         }
                         .logosPedidos2 {
                             width: 30px;
@@ -70,36 +92,42 @@ main{
     /*seccion guia de pedidos*/
 
     /*seccion grupo de productos*/
+    .tituloh2{
+        @include text ("Belanosima" sans-serif , 400, normal, 55px, center, $celesteclaro);
+        font-family: "Belanosima", sans-serif;
+        text-align: center;
+        background-color: $celesteverdozo;
+        padding: 5px;
+    }
     .tiposDeProductosBox{
         @include dFlex (flex, column, wrap, center, center);
-        background-color: rgba(249, 116, 0, 0.9);
-        margin: 80px;
-        border-radius: 50px;
-        padding-left: 0;
-        h2{
-            @include text ("Belanosima" sans-serif , 400, normal, 55px, center, $azulosc );
-            font-family: "Belanosima", sans-serif;
-            padding-top: 35px;
-            text-align: center;
-        }
+        background-image: url(../images/generales/hoja.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 64rem;
+        margin-top: 4rem;
+       
         .listaImagenes{
             list-style: none;
-            text-decoration: none!important;
             @include dFlex (flex, row, wrap, center, center);
+            margin-left: 420px;
+            margin-right: 190px;
+            margin-top: -220px;
             li{
                 text-align: center;
-                
+                a{
+                    text-decoration: none;
+                }
                 .cateletra{
-                    @include text ("Belanosima" sans-serif , 400, normal, 30px, center, $azulosc );
+                    @include text ("Belanosima" sans-serif , 400, normal, 30px, center, $naranjaosc);
                     font-family: "Belanosima", sans-serif;
-                    margin: 20px;
                 }
                 .produc{
-                    width: 350px;
-                    height: 350px;
-                    margin: 25px;
+                    width: auto;
+                    height: 250px;
+                    margin: 15px;
                     &:hover{
-                       transform: scale(1.2);
+                       transform: scale(1.1);
                     }
                 }
             } 
@@ -107,68 +135,63 @@ main{
     }
     .listadoDeProductos {
         h2{
-            @include text ("Belanosima" sans-serif , 400, normal, 55px, center, $celesteclaro );
+            @include text ("Belanosima" sans-serif , 400, normal, 55px, center, $blancoamarillo);
             font-family: "Belanosima", sans-serif;
-            background-color: $azulosc;
-            padding: 10px;
+            background-color: $naranjamed;
+            padding: 5px;
         }
         h3{
-            @include text ("Belanosima" sans-serif , 400, normal, 30px, center, $azulosc );
+            @include text ("Belanosima" sans-serif , 400, normal, 30px, center, $naranjaosc);
             font-family: "Belanosima", sans-serif;
         } 
         /* Categorías */
        .galletas, .lacteos, .bebidas, .almacen, .frutas, .limpieza {
             @include dFlex (flex, column, nowrap, center, center);
-            height: 400px;
-    
+            height: 420px;
+            margin: 30px;
+            margin-left: 140px;
+            margin-right: 140px;
+            border-radius: 20px;
+            background-color:rgba(194, 148, 112, 0.4);
+            h5{
+                @include text ("Edu VIC WA NT Beginner", 500, normal, 30px, center, $blancoamarillo );
+                background-color:rgba(178, 217, 196, 0.6) ;
+                border-radius: 15px;
+            }
+            p{
+                @include text ("Belanosima" sans-serif , 400, normal, 30px, center, $blancoamarillo);
+                font-family: "Belanosima", sans-serif;
+                background-color:rgba(178, 217, 196, 0.6) ;
+            }
             .imagenProducto {
-                margin-top: 20px;
-                width: 330px;
+                margin: 5px;
+                width: auto;
                 height: 330px;
-               & :hover {
-                    transform: scale(1.2);
-                }
             } 
         }
-        .galletas{
-            background-color:#07838d;
-        }
-        .lacteos{
-            background-color:#109099;
-        }
-        .bebidas {
-            background-color:#34b0b9;
-        }
-        
-        .almacen {
-            background-color:#57c1c9;
-        }
-        
-        .frutas {
-            background-color:#56d6df;
-        }
-        
-        .limpieza {
-            background-color:#85eaf1;
-        }    
     }
     .irAPedidos{
         @include dFlex (flex, column, nowrap, center, center);
-        margin: 70px;
+        padding: 8rem;
 
-        p {
+        background-image: url(../images/generales/papel2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        p{
             @include text ("Edu VIC WA NT Beginner", 500, normal, 50px, center, $azulosc );
             margin-bottom: 20px;
         }
         .boton{
             text-decoration: none;
-            background-color: $azulosc;
+            background-color: $naranjaosc;
             border-radius: 10px;
             padding: 20px;
             @include text ("Belanosima" sans-serif , 400, normal, 30px, center, $blancoamarillo );
             font-family: "Belanosima", sans-serif;
             &:hover {
-                background-color: $naranjaosc;
+                background-color: $naranjamed;
              }
         }
     }
