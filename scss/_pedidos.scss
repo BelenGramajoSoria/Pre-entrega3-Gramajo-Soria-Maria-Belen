@@ -1,8 +1,6 @@
 /* Estilos para la página 'Pedidos' */
 body{
-    max-width: 100%;
     .mainIndex{
-        max-width: 100%;
         .pedidos {
             display: grid; 
             grid-auto-columns: 1fr; 
@@ -30,13 +28,13 @@ body{
             /* Formulario 'Pedidos' */
             .formularioPedidos {
                 grid-area: formularioPedidos;
+                max-width: 100%;
                 background-color: $naranjacla;
                 @include dFlex (flex, column, nowrap, center, center);
                 @include text ("Edu VIC WA NT Beginner", 500, normal, 22px, center, $naranjaosc );
                 transform: rotate(1deg) translateY(30px);
                 border-radius: 10px;
-                margin: 60px;
-                max-width: 100%;
+                margin: 40px;
                 .cinta{
                     position: absolute;
                     top: -5.4rem;
@@ -80,13 +78,15 @@ body{
                 grid-area: iniciaSesion;
                 background-image: url(../images/generales/papel2.png);
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: contain;
+                background-position: center;
                 @include dFlex (flex, column, nowrap, center, center);
                 border-radius: 20px;
-                margin-top: 10px;
+                margin-top: 40px;
                 margin-left: 40px;
-                margin-bottom: 10px;
+                margin-bottom: 40px;
                 margin-right: 20px;
+                padding-top: 20px;
                 h2 {
                     @include text ("Belanosima" sans-serif , 500, normal, 40px, center, $azulosc );
                     font-family: "Belanosima", sans-serif;
@@ -114,12 +114,13 @@ body{
                 grid-area: suscribite;
                 background-image: url(../images/generales/papel.png);
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: contain;
+                background-position: center;
                 @include dFlex (flex, column, nowrap, center,center);
                 border-radius: 20px;
-                margin-top: 10px;
+                margin-top: 40px;
                 margin-left: 20px;
-                margin-bottom: 10px;
+                margin-bottom: 40px;
                 margin-right: 40px;
                 padding-left: 120px;
                 padding-right: 120px;
@@ -148,4 +149,3 @@ body{
         }
     }
 }
-

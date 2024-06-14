@@ -162,6 +162,7 @@ main{
                 @include text ("Belanosima" sans-serif , 400, normal, 30px, center, $blancoamarillo);
                 font-family: "Belanosima", sans-serif;
                 background-color:rgba(178, 217, 196, 0.6) ;
+                border-radius: 15px;
             }
             .imagenProducto {
                 margin: 5px;

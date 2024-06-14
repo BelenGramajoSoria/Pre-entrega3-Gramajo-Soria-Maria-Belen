@@ -24,7 +24,7 @@ body header .barraSuperior .imgLog {
 body header .barraSuperior .imgLog .logo1 {
   width: 160px;
   height: 160px;
-  margin-top: 15px;
+  margin-top: 95px;
 }
 body header .barra2 .navbar {
   height: 45px;
@@ -743,6 +743,7 @@ main .listadoDeProductos .galletas p, main .listadoDeProductos .lacteos p, main 
   color: rgb(244, 242, 235);
   font-family: "Belanosima", sans-serif;
   background-color: rgba(178, 217, 196, 0.6);
+  border-radius: 15px;
 }
 main .listadoDeProductos .galletas .imagenProducto, main .listadoDeProductos .lacteos .imagenProducto, main .listadoDeProductos .bebidas .imagenProducto, main .listadoDeProductos .almacen .imagenProducto, main .listadoDeProductos .frutas .imagenProducto, main .listadoDeProductos .limpieza .imagenProducto {
   margin: 5px;
@@ -1081,12 +1082,6 @@ body .mainIndex .sobreNosotros .texto2 .textoLimitado .str {
 
 /* Fin de la página 'Sobre nosotros' */
 /* Estilos para la página 'Pedidos' */
-body {
-  max-width: 100%;
-}
-body .mainIndex {
-  max-width: 100%;
-}
 body .mainIndex .pedidos {
   display: grid;
   grid-auto-columns: 1fr;
@@ -1123,6 +1118,7 @@ body .mainIndex .pedidos .tituloPedidos h2 {
 }
 body .mainIndex .pedidos .formularioPedidos {
   grid-area: formularioPedidos;
+  max-width: 100%;
   background-color: rgb(178, 217, 196);
   display: flex;
   flex-direction: column;
@@ -1137,8 +1133,7 @@ body .mainIndex .pedidos .formularioPedidos {
   color: rgb(68, 145, 111);
   transform: rotate(1deg) translateY(30px);
   border-radius: 10px;
-  margin: 60px;
-  max-width: 100%;
+  margin: 40px;
 }
 body .mainIndex .pedidos .formularioPedidos .cinta {
   position: absolute;
@@ -1203,17 +1198,19 @@ body .mainIndex .pedidos .iniciaSesion {
   grid-area: iniciaSesion;
   background-image: url(../images/generales/papel2.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  margin-top: 10px;
+  margin-top: 40px;
   margin-left: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   margin-right: 20px;
+  padding-top: 20px;
 }
 body .mainIndex .pedidos .iniciaSesion h2 {
   font-family: "Belanosima" sans-serif;
@@ -1259,16 +1256,17 @@ body .mainIndex .pedidos .suscribite {
   grid-area: suscribite;
   background-image: url(../images/generales/papel.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  margin-top: 10px;
+  margin-top: 40px;
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   margin-right: 40px;
   padding-left: 120px;
   padding-right: 120px;
