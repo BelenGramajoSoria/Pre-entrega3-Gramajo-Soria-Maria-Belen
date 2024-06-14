@@ -663,6 +663,7 @@ body{
                 margin-left:1.3rem;                max-width: 90%;
                 margin-right: 1rem;
                 padding-left: 0px;
+                margin-bottom: 3rem;
                 h2 {
                     @include text ("Belanosima" sans-serif , 500, normal, 30px, center, $celesteclaro);
                     font-family: "Belanosima", sans-serif;
@@ -682,6 +683,7 @@ body{
                 @include dFlex (flex, column, nowrap, center, center);
                 margin-left:1.3rem;
                 max-width: 90%;
+               
                 h2 {
                     @include text ("Belanosima" sans-serif , 300, normal, 30px, center, $naranjacla );
                     font-family: "Belanosima", sans-serif;
@@ -842,7 +844,7 @@ main{
             list-style: none;
             @include dFlex (flex, row, wrap, center, center);
             margin-left: 26.25rem;
-            margin-right: 20rem;
+            margin-right: 22rem;
             margin-top: -13.75rem;
             li{
                 text-align: center;
