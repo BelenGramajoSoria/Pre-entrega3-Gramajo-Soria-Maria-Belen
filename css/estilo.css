@@ -1977,7 +1977,7 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
   }
   body .mainIndex .sobreNosotros .tituloSN {
     grid-area: tituloSN;
-    max-width: 100vw;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -2005,11 +2005,14 @@ body .mainIndex .pedidos .suscribite .sFormulario button:hover {
     margin-right: 0;
     padding: 20px;
     box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.7);
-    max-width: 100vw;
+    max-width: 100%;
+  }
+  body .mainIndex .sobreNosotros .franjaV img {
+    width: 15.5rem;
   }
   body .mainIndex .sobreNosotros .texto1 {
     grid-area: texto1;
-    margin: 30px;
+    margin: 20px;
     max-width: 100%;
   }
   body .mainIndex .sobreNosotros .texto1 p {

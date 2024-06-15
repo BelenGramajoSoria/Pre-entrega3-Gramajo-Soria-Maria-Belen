@@ -524,7 +524,7 @@ body{
             /* Título 'Sobre nosotros' */
             .tituloSN { 
                 grid-area: tituloSN; 
-                max-width: 100vw;
+                max-width: 100%;
                 @include dFlex (flex, row, nowrap, center, center);
                 background-color:$naranjamed;
                 h2 {
@@ -540,12 +540,15 @@ body{
                 margin-right:0;
                 padding: 20px;
                 box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.7);
-                max-width: 100vw;
+                max-width: 100%;
+                img{
+                    width: 15.5rem;
+                }
             }
             /* Texto introductorio */
             .texto1 { 
                 grid-area: texto1;
-                margin: 30px;
+                margin: 20px;
                 max-width: 100%;
                 p {
                     @include text ("Edu VIC WA NT Beginner", 400, normal, 18px, center, $azulosc );
